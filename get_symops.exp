@@ -1,0 +1,17 @@
+#!/usr/bin/expect -f
+
+set counter 1
+set timeout 20
+set ip "www.cryst.ehu.es"
+set port "80"
+
+while { $counter < 231 } {
+	spawn telnet $ip $port
+	expect "'^]'."
+
+	send -- "GET /cgi-bin/cryst/text/nph-list_gen?g=$counter\r"
+	expect "'^]'."
+
+	set counter [expr $counter+1]
+}
+
