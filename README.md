@@ -14,6 +14,7 @@
 2. Create Python interface.
 3. Make the code more user-friendly by allowing highest possible abstraction for the user: implementation should automatically handle all parts of data processing--symmetrization, binning and adding workspaces, normalization.
 4. Define constants.
+5. Write test cases.
 
 ## Running the code
 
