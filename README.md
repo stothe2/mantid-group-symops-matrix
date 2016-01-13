@@ -10,7 +10,7 @@
 ## Work in-progress
 
 1. Handling exceptions. Would eventually need to make appropriate changes to `MantidKernal/Exception.h`.
-2. Make the code more user-friendly by allowing users to select which symmetry operations they want to use through a GUI. [`VisibleWhenProperty`](http://docs.mantidproject.org/nightly/api/python/mantid/kernel/VisibleWhenProperty.html) will be useful.
+2. Make the code more user-friendly by allowing users to select which symmetry operations they want to use through a GUI. Look at [`VisibleWhenProperty`](http://docs.mantidproject.org/nightly/api/python/mantid/kernel/VisibleWhenProperty.html) and [`EnabledWhenProperty`](http://docs.mantidproject.org/nightly/api/python/mantid/kernel/EnabledWhenProperty.html).
 3. Write test cases.
 
 ## Running the code
