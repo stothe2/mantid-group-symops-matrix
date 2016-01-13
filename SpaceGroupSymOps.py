@@ -134,6 +134,11 @@ class SpaceGroupSymOps(PythonAlgorithm):
 		outputBins = self.getProperty("OutputBins").value
 		translation = self.getProperty("Translation").value
 
+		binned_ws = BinMD(InputWorkspace=mdws, AxisAligned=axisAligned,
+					BasisVector0=basis0, BasisVector1=basis1,
+					NormalizeBasisVectors=normalizeBasisVectors, Translation=translation,
+					OutputExtents=outputExtents, OutputBins=outputBins)
+
 		unit0, basisVec0 = self.__destringify(basis0)
 		unit1, basisVec1 = self.__destringify(basis1)
 
@@ -148,13 +153,7 @@ class SpaceGroupSymOps(PythonAlgorithm):
 						+ ',' + str(newBasisVec1[1]) + ',' + str(newBasisVec1[2]) + ',' + '0'
 			newTranslation = translation + dict_t[sgNumber][index]
 
-			if (index == 0):
-				binned_ws = BinMD(InputWorkspace=mdws, AxisAligned=axisAligned,
-					BasisVector0=basisVec0_str, BasisVector1=basisVec1_str,
-					NormalizeBasisVectors=normalizeBasisVectors, Translation=newTranslation,
-					OutputExtents=outputExtents, OutputBins=outputBins)
-			else:
-				binned_ws += BinMD(InputWorkspace=mdws, AxisAligned=axisAligned,
+			binned_ws += BinMD(InputWorkspace=mdws, AxisAligned=axisAligned,
 					BasisVector0=basisVec0_str, BasisVector1=basisVec1_str,
 					NormalizeBasisVectors=normalizeBasisVectors, Translation=newTranslation,
 					OutputExtents=outputExtents, OutputBins=outputBins)
