@@ -2,7 +2,7 @@
 
 ## To think about
 
-1. Switch to using `SymmetryOperationFactory` for generating symmetry operation vectors instead of manually storing matrices and carring out matrix multiplication. See [here](http://docs.mantidproject.org/nightly/concepts/SymmetryGroups.html)
+1. Switch to using `SymmetryOperationFactory` for generating symmetry operation vectors instead of manually storing matrices and carring out matrix multiplication. See [here](http://docs.mantidproject.org/nightly/concepts/SymmetryGroups.html).
 2. Instead of having the user to enter the space group, create a list of all symmetry operations (there are only a few dozen or so), and allow the user to select them through a GUI.
 3. Normalization.
 
