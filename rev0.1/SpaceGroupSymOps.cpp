@@ -64,7 +64,7 @@ SpaceGroupSymOps::transformSymOp(size_t number, std::vector<int> v_cut) {
 
 // "Stringifies" the given basis vector so it can be used as an input to BinMD.
 std::string
-SpaceGroupSymOps::getBasisVector(std::vector<int> v_basis, std::string name) {
+SpaceGroupSymOps::getBasisVector(/*std::vector<int> v_basis,*/ std::string name) {
 	std::string basis;
 
 	basis.append(name);
