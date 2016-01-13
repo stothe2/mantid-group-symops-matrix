@@ -2,14 +2,15 @@
 
 ## To think about
 
-1. Do we continue to use C++ STL for storing matrices and vectors, or incorporate Mantid's own `V3D` and `Matrix` classes, or use external libraries like `Boost` or `Eigen`?
-2. Normalization.
+1. Switch to using `SymmetryOperationFactory` for generating symmetry operation vectors instead of manually storing matrices and carring out matrix multiplication. See [here](http://docs.mantidproject.org/nightly/concepts/SymmetryGroups.html)
+2. Instead of having the user to enter the space group, create a list of all symmetry operations (there are only a few dozen or so), and allow the user to select them through a GUI.
+3. Normalization.
 
 
 ## Work in-progress
 
 1. Handling exceptions. Would eventually need to make appropriate changes to `MantidKernal/Exception.h`.
-2. Make the code more user-friendly by allowing users to select which symmetry operations they want to use through a GUI.
+2. Make the code more user-friendly by allowing users to select which symmetry operations they want to use through a GUI. [`VisibleWhenProperty`](http://docs.mantidproject.org/nightly/api/python/mantid/kernel/VisibleWhenProperty.html) will be useful.
 3. Write test cases.
 
 ## Running the code
