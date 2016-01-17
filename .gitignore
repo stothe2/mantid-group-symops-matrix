@@ -10,3 +10,13 @@ rev0.0/SpaceGroupSymOps.h
 rev0.0/SymOpsTest.h
 
 SymOpsTest.h
+
+pythonInterface/hello.cpp
+
+pythonInterface/hello.so
+
+pythonInterface/makefile
+
+pythonInterface/Symmetrize.cpp
+
+pythonInterface/test.py
