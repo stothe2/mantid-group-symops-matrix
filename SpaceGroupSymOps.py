@@ -99,29 +99,63 @@ for k, v in t:
 class SpaceGroupSymOps(PythonAlgorithm):
 
 	def PyInit(self):
-		# Input properties
-		self.declareProperty('SpaceGroup', 198, IntBoundedValidator(lower=1, upper=230))
-		self.declareProperty('AxisAligned', False)
-		self.declareProperty('NormalizedBasisVectors', True)
-		self.declareProperty('BasisVector0', 'a,unit,1,1,0,0', StringMandatoryValidator())
-		self.declareProperty('BasisVector1', 'b,unit,0,0,1,0', StringMandatoryValidator())
+		# ------------------------- Input properties -------------------------
+
+		# Space group and symmetry properties
+		self.declareProperty('SpaceGroup', 198, IntBoundedValidator(lower=1, upper=230),
+			doc='Space group number as given in International Tables for Crystallography, Vol. A')
+		self.declareProperty('SymmetryOperations', 'All', validator=StringListValidator(['All', 'Choose']),
+			doc='Symmetry operations to be used on data')
+		self.declareProperty('-x+1/2,-y,z+1/2', True)
+		self.declareProperty('-x,y+1/2,-z+1/2', True)
+		self.declareProperty('z,x,y', True)
+
+		#self.setPropertySettings('-x+1/2,-y,z+1/2', EnabledWhenProperty('SymmetryOperations', PropertyCriterion.IsNotEqualTo, 'All'))
+		self.setPropertySettings('-x+1/2,-y,z+1/2', VisibleWhenProperty('SpaceGroup', PropertyCriterion.IsEqualTo, '198'))
+		self.setPropertySettings('-x,y+1/2,-z+1/2', VisibleWhenProperty('SpaceGroup', PropertyCriterion.IsEqualTo, '198'))
+		self.setPropertySettings('z,x,y', VisibleWhenProperty('SpaceGroup', PropertyCriterion.IsEqualTo, '198'))
+
+		sym_grp = 'Space group options'
+		self.setPropertyGroup('SymmetryOperations', sym_grp)
+		self.setPropertyGroup('SpaceGroup', sym_grp)
+		self.setPropertyGroup('-x+1/2,-y,z+1/2', sym_grp)
+		self.setPropertyGroup('-x,y+1/2,-z+1/2', sym_grp)
+		self.setPropertyGroup('z,x,y', sym_grp)
+
+		# Binning properties
+		self.declareProperty('BasisVector0', 'a,unit,1,1,0,0', StringMandatoryValidator(), 'Format: \'name,units,x,y,z\'')
+		self.declareProperty('BasisVector1', 'b,unit,0,0,1,0', StringMandatoryValidator(), 'Format: \'name,units,x,y,z\'')
+		self.declareProperty('AxisAligned', False, 'Perform binning aligned with the axes of the input MDEventWorkspace?')
+		self.declareProperty('NormalizedBasisVectors', True, 'Normalize the given basis vectors to unity')
 		self.declareProperty(FloatArrayProperty(name='OutputExtents',
 												values=[-5,8,-5,8],
-												validator=FloatArrayLengthValidator(4)))
+												validator=FloatArrayLengthValidator(4)),
+			'The minimum, maximum edges of space of each dimension of the OUTPUT workspace, as a comma-separated list')
 		self.declareProperty(FloatArrayProperty(name='OutputBins',
 												values=[50,50],
-												validator=FloatArrayLengthValidator(2)))
+												validator=FloatArrayLengthValidator(2)),
+			'The number of bins for each dimension of the OUTPUT workspace')
 		self.declareProperty(FloatArrayProperty(name='Translation',
 												values=[0,0,0,0],
-												validator=FloatArrayLengthValidator(4)))
+												validator=FloatArrayLengthValidator(4)),
+			'Coordinates in the INPUT workspace that corresponds to (0,0,0) in the OUTPUT workspace')
 		self.declareProperty(WorkspaceProperty(name='InputWorkspace',
 												defaultValue='',
-												direction=Direction.Input))
+												direction=Direction.Input), 'An input MDWorkspace')
 
-		# Output properties
+		bin_grp = 'Binning parameters'
+		self.setPropertyGroup('BasisVector0', bin_grp)
+		self.setPropertyGroup('BasisVector1', bin_grp)
+		self.setPropertyGroup('AxisAligned', bin_grp)
+		self.setPropertyGroup('NormalizedBasisVectors', bin_grp)
+		self.setPropertyGroup('OutputExtents', bin_grp)
+		self.setPropertyGroup('OutputBins', bin_grp)
+		self.setPropertyGroup('Translation', bin_grp)
+
+		# ------------------------- Output properties ------------------------
 		self.declareProperty(WorkspaceProperty(name='BinnedWorkspace',
 												defaultValue='',
-												direction=Direction.Output))
+												direction=Direction.Output), 'A name for the output MDHistoWorkspace')
 
 	def PyExec(self):
 		sgNumber = self.getProperty("SpaceGroup").value
