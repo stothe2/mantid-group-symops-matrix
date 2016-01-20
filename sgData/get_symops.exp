@@ -9,9 +9,8 @@ while { $counter < 231 } {
 	spawn telnet $ip $port
 	expect "'^]'."
 
-	send -- "GET /cgi-bin/cryst/text/nph-list_gen?g=$counter\r"
+	send -- "GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=$counter\r"
 	expect "'^]'."
 
 	set counter [expr $counter+1]
 }
-
