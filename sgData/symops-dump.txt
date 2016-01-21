@@ -5441,3 +5441,6604 @@ Trying 158.227.0.68...
 Connected to cryst.ehu.es.
 Escape character is '^]'.
 GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=112
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="112" symbol="P-42c">
+<generators>
+<!-- Generators of the group P-42c -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>y,-x,-z</xyz>
+<mat>
+<row>[   0   1   0 ] [    0]</row>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,y,-z+1/2</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [  1/2]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=113
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="113" symbol="P-42_1m">
+<generators>
+<!-- Generators of the group P-42_1m -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>y,-x,-z</xyz>
+<mat>
+<row>[   0   1   0 ] [    0]</row>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x+1/2,y+1/2,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [  1/2]</row>
+<row>[   0   1   0 ] [  1/2]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=114
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="114" symbol="P-42_1c">
+<generators>
+<!-- Generators of the group P-42_1c -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>y,-x,-z</xyz>
+<mat>
+<row>[   0   1   0 ] [    0]</row>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x+1/2,y+1/2,-z+1/2</xyz>
+<mat>
+<row>[  -1   0   0 ] [  1/2]</row>
+<row>[   0   1   0 ] [  1/2]</row>
+<row>[   0   0  -1 ] [  1/2]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=115
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="115" symbol="P-4m2">
+<generators>
+<!-- Generators of the group P-4m2 -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>y,-x,-z</xyz>
+<mat>
+<row>[   0   1   0 ] [    0]</row>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>x,-y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=116
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="116" symbol="P-4c2">
+<generators>
+<!-- Generators of the group P-4c2 -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>y,-x,-z</xyz>
+<mat>
+<row>[   0   1   0 ] [    0]</row>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>x,-y,z+1/2</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=117
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="117" symbol="P-4b2">
+<generators>
+<!-- Generators of the group P-4b2 -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>y,-x,-z</xyz>
+<mat>
+<row>[   0   1   0 ] [    0]</row>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>x+1/2,-y+1/2,z</xyz>
+<mat>
+<row>[   1   0   0 ] [  1/2]</row>
+<row>[   0  -1   0 ] [  1/2]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=118
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="118" symbol="P-4n2">
+<generators>
+<!-- Generators of the group P-4n2 -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>y,-x,-z</xyz>
+<mat>
+<row>[   0   1   0 ] [    0]</row>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>x+1/2,-y+1/2,z+1/2</xyz>
+<mat>
+<row>[   1   0   0 ] [  1/2]</row>
+<row>[   0  -1   0 ] [  1/2]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=119
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="119" symbol="I-4m2">
+<generators>
+<!-- Generators of the group I-4m2 -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>y,-x,-z</xyz>
+<mat>
+<row>[   0   1   0 ] [    0]</row>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>x,-y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>x+1/2,y+1/2,z+1/2</xyz>
+<mat>
+<row>[   1   0   0 ] [  1/2]</row>
+<row>[   0   1   0 ] [  1/2]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=120
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="120" symbol="I-4c2">
+<generators>
+<!-- Generators of the group I-4c2 -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>y,-x,-z</xyz>
+<mat>
+<row>[   0   1   0 ] [    0]</row>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>x,-y,z+1/2</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>x+1/2,y+1/2,z+1/2</xyz>
+<mat>
+<row>[   1   0   0 ] [  1/2]</row>
+<row>[   0   1   0 ] [  1/2]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=121
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="121" symbol="I-42m">
+<generators>
+<!-- Generators of the group I-42m -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>y,-x,-z</xyz>
+<mat>
+<row>[   0   1   0 ] [    0]</row>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>x+1/2,y+1/2,z+1/2</xyz>
+<mat>
+<row>[   1   0   0 ] [  1/2]</row>
+<row>[   0   1   0 ] [  1/2]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=122
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="122" symbol="I-42d">
+<generators>
+<!-- Generators of the group I-42d -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>y,-x,-z</xyz>
+<mat>
+<row>[   0   1   0 ] [    0]</row>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x+1/2,y,-z+3/4</xyz>
+<mat>
+<row>[  -1   0   0 ] [  1/2]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [  3/4]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>x+1/2,y+1/2,z+1/2</xyz>
+<mat>
+<row>[   1   0   0 ] [  1/2]</row>
+<row>[   0   1   0 ] [  1/2]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=123
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="123" symbol="P4/mmm">
+<generators>
+<!-- Generators of the group P4/mmm -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,x,z</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=124
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="124" symbol="P4/mcc">
+<generators>
+<!-- Generators of the group P4/mcc -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,x,z</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,y,-z+1/2</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=125
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="125" symbol="P4/nbm">
+<generators>
+<!-- Generators of the group P4/nbm -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x+1/2,-y+1/2,z</xyz>
+<mat>
+<row>[  -1   0   0 ] [  1/2]</row>
+<row>[   0  -1   0 ] [  1/2]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y+1/2,x,z</xyz>
+<mat>
+<row>[   0  -1   0 ] [  1/2]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x+1/2,y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [  1/2]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=126
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="126" symbol="P4/nnc">
+<generators>
+<!-- Generators of the group P4/nnc -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x+1/2,-y+1/2,z</xyz>
+<mat>
+<row>[  -1   0   0 ] [  1/2]</row>
+<row>[   0  -1   0 ] [  1/2]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y+1/2,x,z</xyz>
+<mat>
+<row>[   0  -1   0 ] [  1/2]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x+1/2,y,-z+1/2</xyz>
+<mat>
+<row>[  -1   0   0 ] [  1/2]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=127
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="127" symbol="P4/mbm">
+<generators>
+<!-- Generators of the group P4/mbm -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,x,z</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x+1/2,y+1/2,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [  1/2]</row>
+<row>[   0   1   0 ] [  1/2]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=128
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="128" symbol="P4/mnc">
+<generators>
+<!-- Generators of the group P4/mnc -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,x,z</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x+1/2,y+1/2,-z+1/2</xyz>
+<mat>
+<row>[  -1   0   0 ] [  1/2]</row>
+<row>[   0   1   0 ] [  1/2]</row>
+<row>[   0   0  -1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=129
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="129" symbol="P4/nmm">
+<generators>
+<!-- Generators of the group P4/nmm -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x+1/2,-y+1/2,z</xyz>
+<mat>
+<row>[  -1   0   0 ] [  1/2]</row>
+<row>[   0  -1   0 ] [  1/2]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y+1/2,x,z</xyz>
+<mat>
+<row>[   0  -1   0 ] [  1/2]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,y+1/2,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [  1/2]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=130
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="130" symbol="P4/ncc">
+<generators>
+<!-- Generators of the group P4/ncc -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x+1/2,-y+1/2,z</xyz>
+<mat>
+<row>[  -1   0   0 ] [  1/2]</row>
+<row>[   0  -1   0 ] [  1/2]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y+1/2,x,z</xyz>
+<mat>
+<row>[   0  -1   0 ] [  1/2]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,y+1/2,-z+1/2</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [  1/2]</row>
+<row>[   0   0  -1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=131
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="131" symbol="P4_2/mmc">
+<generators>
+<!-- Generators of the group P4_2/mmc -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,x,z+1/2</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=132
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="132" symbol="P4_2/mcm">
+<generators>
+<!-- Generators of the group P4_2/mcm -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,x,z+1/2</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,y,-z+1/2</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=133
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="133" symbol="P4_2/nbc">
+<generators>
+<!-- Generators of the group P4_2/nbc -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x+1/2,-y+1/2,z</xyz>
+<mat>
+<row>[  -1   0   0 ] [  1/2]</row>
+<row>[   0  -1   0 ] [  1/2]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y+1/2,x,z+1/2</xyz>
+<mat>
+<row>[   0  -1   0 ] [  1/2]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x+1/2,y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [  1/2]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=134
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="134" symbol="P4_2/nnm">
+<generators>
+<!-- Generators of the group P4_2/nnm -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x+1/2,-y+1/2,z</xyz>
+<mat>
+<row>[  -1   0   0 ] [  1/2]</row>
+<row>[   0  -1   0 ] [  1/2]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y+1/2,x,z+1/2</xyz>
+<mat>
+<row>[   0  -1   0 ] [  1/2]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x+1/2,y,-z+1/2</xyz>
+<mat>
+<row>[  -1   0   0 ] [  1/2]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=135
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="135" symbol="P4_2/mbc">
+<generators>
+<!-- Generators of the group P4_2/mbc -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,x,z+1/2</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x+1/2,y+1/2,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [  1/2]</row>
+<row>[   0   1   0 ] [  1/2]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=136
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="136" symbol="P4_2/mnm">
+<generators>
+<!-- Generators of the group P4_2/mnm -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y+1/2,x+1/2,z+1/2</xyz>
+<mat>
+<row>[   0  -1   0 ] [  1/2]</row>
+<row>[   1   0   0 ] [  1/2]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x+1/2,y+1/2,-z+1/2</xyz>
+<mat>
+<row>[  -1   0   0 ] [  1/2]</row>
+<row>[   0   1   0 ] [  1/2]</row>
+<row>[   0   0  -1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=137
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="137" symbol="P4_2/nmc">
+<generators>
+<!-- Generators of the group P4_2/nmc -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x+1/2,-y+1/2,z</xyz>
+<mat>
+<row>[  -1   0   0 ] [  1/2]</row>
+<row>[   0  -1   0 ] [  1/2]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y+1/2,x,z+1/2</xyz>
+<mat>
+<row>[   0  -1   0 ] [  1/2]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,y+1/2,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [  1/2]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=138
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="138" symbol="P4_2/ncm">
+<generators>
+<!-- Generators of the group P4_2/ncm -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x+1/2,-y+1/2,z</xyz>
+<mat>
+<row>[  -1   0   0 ] [  1/2]</row>
+<row>[   0  -1   0 ] [  1/2]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y+1/2,x,z+1/2</xyz>
+<mat>
+<row>[   0  -1   0 ] [  1/2]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,y+1/2,-z+1/2</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [  1/2]</row>
+<row>[   0   0  -1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=139
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="139" symbol="I4/mmm">
+<generators>
+<!-- Generators of the group I4/mmm -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,x,z</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>x+1/2,y+1/2,z+1/2</xyz>
+<mat>
+<row>[   1   0   0 ] [  1/2]</row>
+<row>[   0   1   0 ] [  1/2]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=140
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="140" symbol="I4/mcm">
+<generators>
+<!-- Generators of the group I4/mcm -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,x,z</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,y,-z+1/2</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>x+1/2,y+1/2,z+1/2</xyz>
+<mat>
+<row>[   1   0   0 ] [  1/2]</row>
+<row>[   0   1   0 ] [  1/2]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=141
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="141" symbol="I4_1/amd">
+<generators>
+<!-- Generators of the group I4_1/amd -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x+1/2,-y,z+1/2</xyz>
+<mat>
+<row>[  -1   0   0 ] [  1/2]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y+1/4,x+3/4,z+1/4</xyz>
+<mat>
+<row>[   0  -1   0 ] [  1/4]</row>
+<row>[   1   0   0 ] [  3/4]</row>
+<row>[   0   0   1 ] [  1/4]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x+1/2,y,-z+1/2</xyz>
+<mat>
+<row>[  -1   0   0 ] [  1/2]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>x+1/2,y+1/2,z+1/2</xyz>
+<mat>
+<row>[   1   0   0 ] [  1/2]</row>
+<row>[   0   1   0 ] [  1/2]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=142
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="142" symbol="I4_1/acd">
+<generators>
+<!-- Generators of the group I4_1/acd -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x+1/2,-y,z+1/2</xyz>
+<mat>
+<row>[  -1   0   0 ] [  1/2]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y+1/4,x+3/4,z+1/4</xyz>
+<mat>
+<row>[   0  -1   0 ] [  1/4]</row>
+<row>[   1   0   0 ] [  3/4]</row>
+<row>[   0   0   1 ] [  1/4]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x+1/2,y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [  1/2]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>x+1/2,y+1/2,z+1/2</xyz>
+<mat>
+<row>[   1   0   0 ] [  1/2]</row>
+<row>[   0   1   0 ] [  1/2]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=143
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="143" symbol="P3">
+<generators>
+<!-- Generators of the group P3 -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,x-y,z</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   1  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=144
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="144" symbol="P3_1">
+<generators>
+<!-- Generators of the group P3_1 -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,x-y,z+1/3</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   1  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [  1/3]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=145
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="145" symbol="P3_2">
+<generators>
+<!-- Generators of the group P3_2 -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,x-y,z+2/3</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   1  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [  2/3]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=146
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="146" symbol="R3">
+<generators>
+<!-- Generators of the group R3 -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,x-y,z</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   1  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>x+2/3,y+1/3,z+1/3</xyz>
+<mat>
+<row>[   1   0   0 ] [  2/3]</row>
+<row>[   0   1   0 ] [  1/3]</row>
+<row>[   0   0   1 ] [  1/3]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=147
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="147" symbol="P-3">
+<generators>
+<!-- Generators of the group P-3 -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,x-y,z</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   1  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=148
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="148" symbol="R-3">
+<generators>
+<!-- Generators of the group R-3 -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,x-y,z</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   1  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>x+2/3,y+1/3,z+1/3</xyz>
+<mat>
+<row>[   1   0   0 ] [  2/3]</row>
+<row>[   0   1   0 ] [  1/3]</row>
+<row>[   0   0   1 ] [  1/3]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=149
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="149" symbol="P312">
+<generators>
+<!-- Generators of the group P312 -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,x-y,z</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   1  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,-x,-z</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=150
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="150" symbol="P321">
+<generators>
+<!-- Generators of the group P321 -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,x-y,z</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   1  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>y,x,-z</xyz>
+<mat>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=151
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="151" symbol="P3_112">
+<generators>
+<!-- Generators of the group P3_112 -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,x-y,z+1/3</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   1  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [  1/3]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,-x,-z+2/3</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   0  -1 ] [  2/3]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=152
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="152" symbol="P3_121">
+<generators>
+<!-- Generators of the group P3_121 -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,x-y,z+1/3</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   1  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [  1/3]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>y,x,-z</xyz>
+<mat>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=153
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="153" symbol="P3_212">
+<generators>
+<!-- Generators of the group P3_212 -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,x-y,z+2/3</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   1  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [  2/3]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,-x,-z+1/3</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   0  -1 ] [  1/3]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=154
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="154" symbol="P3_221">
+<generators>
+<!-- Generators of the group P3_221 -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,x-y,z+2/3</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   1  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [  2/3]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>y,x,-z</xyz>
+<mat>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=155
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="155" symbol="R32">
+<generators>
+<!-- Generators of the group R32 -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,x-y,z</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   1  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>y,x,-z</xyz>
+<mat>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>x+2/3,y+1/3,z+1/3</xyz>
+<mat>
+<row>[   1   0   0 ] [  2/3]</row>
+<row>[   0   1   0 ] [  1/3]</row>
+<row>[   0   0   1 ] [  1/3]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=156
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="156" symbol="P3m1">
+<generators>
+<!-- Generators of the group P3m1 -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,x-y,z</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   1  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,-x,z</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=157
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="157" symbol="P31m">
+<generators>
+<!-- Generators of the group P31m -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,x-y,z</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   1  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>y,x,z</xyz>
+<mat>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=158
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="158" symbol="P3c1">
+<generators>
+<!-- Generators of the group P3c1 -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,x-y,z</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   1  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,-x,z+1/2</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=159
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="159" symbol="P31c">
+<generators>
+<!-- Generators of the group P31c -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,x-y,z</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   1  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>y,x,z+1/2</xyz>
+<mat>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=160
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="160" symbol="R3m">
+<generators>
+<!-- Generators of the group R3m -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,x-y,z</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   1  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,-x,z</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>x+2/3,y+1/3,z+1/3</xyz>
+<mat>
+<row>[   1   0   0 ] [  2/3]</row>
+<row>[   0   1   0 ] [  1/3]</row>
+<row>[   0   0   1 ] [  1/3]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=161
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="161" symbol="R3c">
+<generators>
+<!-- Generators of the group R3c -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,x-y,z</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   1  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,-x,z+1/2</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>x+2/3,y+1/3,z+1/3</xyz>
+<mat>
+<row>[   1   0   0 ] [  2/3]</row>
+<row>[   0   1   0 ] [  1/3]</row>
+<row>[   0   0   1 ] [  1/3]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=162
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="162" symbol="P-31m">
+<generators>
+<!-- Generators of the group P-31m -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,x-y,z</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   1  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,-x,-z</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=163
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="163" symbol="P-31c">
+<generators>
+<!-- Generators of the group P-31c -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,x-y,z</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   1  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,-x,-z+1/2</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   0  -1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=164
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="164" symbol="P-3m1">
+<generators>
+<!-- Generators of the group P-3m1 -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,x-y,z</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   1  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>y,x,-z</xyz>
+<mat>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=165
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="165" symbol="P-3c1">
+<generators>
+<!-- Generators of the group P-3c1 -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,x-y,z</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   1  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>y,x,-z+1/2</xyz>
+<mat>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   0  -1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=166
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="166" symbol="R-3m">
+<generators>
+<!-- Generators of the group R-3m -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,x-y,z</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   1  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>y,x,-z</xyz>
+<mat>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>x+2/3,y+1/3,z+1/3</xyz>
+<mat>
+<row>[   1   0   0 ] [  2/3]</row>
+<row>[   0   1   0 ] [  1/3]</row>
+<row>[   0   0   1 ] [  1/3]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=167
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="167" symbol="R-3c">
+<generators>
+<!-- Generators of the group R-3c -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,x-y,z</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   1  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>y,x,-z+1/2</xyz>
+<mat>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   0  -1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>x+2/3,y+1/3,z+1/3</xyz>
+<mat>
+<row>[   1   0   0 ] [  2/3]</row>
+<row>[   0   1   0 ] [  1/3]</row>
+<row>[   0   0   1 ] [  1/3]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=168
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="168" symbol="P6">
+<generators>
+<!-- Generators of the group P6 -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,x-y,z</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   1  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=169
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="169" symbol="P6_1">
+<generators>
+<!-- Generators of the group P6_1 -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,x-y,z+1/3</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   1  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [  1/3]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,z+1/2</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=170
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="170" symbol="P6_5">
+<generators>
+<!-- Generators of the group P6_5 -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,x-y,z+2/3</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   1  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [  2/3]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,z+1/2</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=171
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="171" symbol="P6_2">
+<generators>
+<!-- Generators of the group P6_2 -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,x-y,z+2/3</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   1  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [  2/3]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=172
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="172" symbol="P6_4">
+<generators>
+<!-- Generators of the group P6_4 -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,x-y,z+1/3</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   1  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [  1/3]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=173
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="173" symbol="P6_3">
+<generators>
+<!-- Generators of the group P6_3 -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,x-y,z</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   1  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,z+1/2</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=174
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="174" symbol="P-6">
+<generators>
+<!-- Generators of the group P-6 -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,x-y,z</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   1  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>x,y,-z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=175
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="175" symbol="P6/m">
+<generators>
+<!-- Generators of the group P6/m -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,x-y,z</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   1  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=176
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="176" symbol="P6_3/m">
+<generators>
+<!-- Generators of the group P6_3/m -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,x-y,z</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   1  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,z+1/2</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=177
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="177" symbol="P622">
+<generators>
+<!-- Generators of the group P622 -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,x-y,z</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   1  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>y,x,-z</xyz>
+<mat>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=178
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="178" symbol="P6_122">
+<generators>
+<!-- Generators of the group P6_122 -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,x-y,z+1/3</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   1  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [  1/3]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,z+1/2</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>y,x,-z+1/3</xyz>
+<mat>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   0  -1 ] [  1/3]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=179
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="179" symbol="P6_522">
+<generators>
+<!-- Generators of the group P6_522 -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,x-y,z+2/3</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   1  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [  2/3]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,z+1/2</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>y,x,-z+2/3</xyz>
+<mat>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   0  -1 ] [  2/3]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=180
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="180" symbol="P6_222">
+<generators>
+<!-- Generators of the group P6_222 -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,x-y,z+2/3</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   1  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [  2/3]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>y,x,-z+2/3</xyz>
+<mat>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   0  -1 ] [  2/3]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=181
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="181" symbol="P6_422">
+<generators>
+<!-- Generators of the group P6_422 -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,x-y,z+1/3</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   1  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [  1/3]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>y,x,-z+1/3</xyz>
+<mat>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   0  -1 ] [  1/3]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=182
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="182" symbol="P6_322">
+<generators>
+<!-- Generators of the group P6_322 -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,x-y,z</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   1  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,z+1/2</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>y,x,-z</xyz>
+<mat>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=183
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="183" symbol="P6mm">
+<generators>
+<!-- Generators of the group P6mm -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,x-y,z</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   1  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,-x,z</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=184
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="184" symbol="P6cc">
+<generators>
+<!-- Generators of the group P6cc -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,x-y,z</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   1  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,-x,z+1/2</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=185
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="185" symbol="P6_3cm">
+<generators>
+<!-- Generators of the group P6_3cm -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,x-y,z</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   1  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,z+1/2</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,-x,z+1/2</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=186
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="186" symbol="P6_3mc">
+<generators>
+<!-- Generators of the group P6_3mc -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,x-y,z</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   1  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,z+1/2</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,-x,z</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=187
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="187" symbol="P-6m2">
+<generators>
+<!-- Generators of the group P-6m2 -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,x-y,z</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   1  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>x,y,-z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,-x,z</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=188
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="188" symbol="P-6c2">
+<generators>
+<!-- Generators of the group P-6c2 -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,x-y,z</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   1  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>x,y,-z+1/2</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,-x,z+1/2</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=189
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="189" symbol="P-62m">
+<generators>
+<!-- Generators of the group P-62m -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,x-y,z</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   1  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>x,y,-z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>y,x,-z</xyz>
+<mat>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=190
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="190" symbol="P-62c">
+<generators>
+<!-- Generators of the group P-62c -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,x-y,z</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   1  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>x,y,-z+1/2</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>y,x,-z</xyz>
+<mat>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=191
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="191" symbol="P6/mmm">
+<generators>
+<!-- Generators of the group P6/mmm -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,x-y,z</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   1  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>y,x,-z</xyz>
+<mat>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=192
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="192" symbol="P6/mcc">
+<generators>
+<!-- Generators of the group P6/mcc -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,x-y,z</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   1  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>y,x,-z+1/2</xyz>
+<mat>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   0  -1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=193
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="193" symbol="P6_3/mcm">
+<generators>
+<!-- Generators of the group P6_3/mcm -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,x-y,z</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   1  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,z+1/2</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>y,x,-z+1/2</xyz>
+<mat>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   0  -1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=194
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="194" symbol="P6_3/mmc">
+<generators>
+<!-- Generators of the group P6_3/mmc -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-y,x-y,z</xyz>
+<mat>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   1  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,z+1/2</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>y,x,-z</xyz>
+<mat>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=195
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="195" symbol="P23">
+<generators>
+<!-- Generators of the group P23 -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>z,x,y</xyz>
+<mat>
+<row>[   0   0   1 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=196
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="196" symbol="F23">
+<generators>
+<!-- Generators of the group F23 -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>z,x,y</xyz>
+<mat>
+<row>[   0   0   1 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>x,y+1/2,z+1/2</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [  1/2]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>x+1/2,y,z+1/2</xyz>
+<mat>
+<row>[   1   0   0 ] [  1/2]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=197
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="197" symbol="I23">
+<generators>
+<!-- Generators of the group I23 -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>z,x,y</xyz>
+<mat>
+<row>[   0   0   1 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>x+1/2,y+1/2,z+1/2</xyz>
+<mat>
+<row>[   1   0   0 ] [  1/2]</row>
+<row>[   0   1   0 ] [  1/2]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=198
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="198" symbol="P2_13">
+<generators>
+<!-- Generators of the group P2_13 -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x+1/2,-y,z+1/2</xyz>
+<mat>
+<row>[  -1   0   0 ] [  1/2]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,y+1/2,-z+1/2</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [  1/2]</row>
+<row>[   0   0  -1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>z,x,y</xyz>
+<mat>
+<row>[   0   0   1 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=199
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="199" symbol="I2_13">
+<generators>
+<!-- Generators of the group I2_13 -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x+1/2,-y,z+1/2</xyz>
+<mat>
+<row>[  -1   0   0 ] [  1/2]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,y+1/2,-z+1/2</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [  1/2]</row>
+<row>[   0   0  -1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>z,x,y</xyz>
+<mat>
+<row>[   0   0   1 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>x+1/2,y+1/2,z+1/2</xyz>
+<mat>
+<row>[   1   0   0 ] [  1/2]</row>
+<row>[   0   1   0 ] [  1/2]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=200
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="200" symbol="Pm-3">
+<generators>
+<!-- Generators of the group Pm-3 -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>z,x,y</xyz>
+<mat>
+<row>[   0   0   1 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=201
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="201" symbol="Pn-3">
+<generators>
+<!-- Generators of the group Pn-3 -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x+1/2,-y+1/2,z</xyz>
+<mat>
+<row>[  -1   0   0 ] [  1/2]</row>
+<row>[   0  -1   0 ] [  1/2]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x+1/2,y,-z+1/2</xyz>
+<mat>
+<row>[  -1   0   0 ] [  1/2]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>z,x,y</xyz>
+<mat>
+<row>[   0   0   1 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=202
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="202" symbol="Fm-3">
+<generators>
+<!-- Generators of the group Fm-3 -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>z,x,y</xyz>
+<mat>
+<row>[   0   0   1 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>x,y+1/2,z+1/2</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [  1/2]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>x+1/2,y,z+1/2</xyz>
+<mat>
+<row>[   1   0   0 ] [  1/2]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=203
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="203" symbol="Fd-3">
+<generators>
+<!-- Generators of the group Fd-3 -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x+3/4,-y+3/4,z</xyz>
+<mat>
+<row>[  -1   0   0 ] [  3/4]</row>
+<row>[   0  -1   0 ] [  3/4]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x+3/4,y,-z+3/4</xyz>
+<mat>
+<row>[  -1   0   0 ] [  3/4]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [  3/4]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>z,x,y</xyz>
+<mat>
+<row>[   0   0   1 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>x,y+1/2,z+1/2</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [  1/2]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>x+1/2,y,z+1/2</xyz>
+<mat>
+<row>[   1   0   0 ] [  1/2]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=204
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="204" symbol="Im-3">
+<generators>
+<!-- Generators of the group Im-3 -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>z,x,y</xyz>
+<mat>
+<row>[   0   0   1 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>x+1/2,y+1/2,z+1/2</xyz>
+<mat>
+<row>[   1   0   0 ] [  1/2]</row>
+<row>[   0   1   0 ] [  1/2]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=205
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="205" symbol="Pa-3">
+<generators>
+<!-- Generators of the group Pa-3 -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x+1/2,-y,z+1/2</xyz>
+<mat>
+<row>[  -1   0   0 ] [  1/2]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,y+1/2,-z+1/2</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [  1/2]</row>
+<row>[   0   0  -1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>z,x,y</xyz>
+<mat>
+<row>[   0   0   1 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=206
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="206" symbol="Ia-3">
+<generators>
+<!-- Generators of the group Ia-3 -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x+1/2,-y,z+1/2</xyz>
+<mat>
+<row>[  -1   0   0 ] [  1/2]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,y+1/2,-z+1/2</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [  1/2]</row>
+<row>[   0   0  -1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>z,x,y</xyz>
+<mat>
+<row>[   0   0   1 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>x+1/2,y+1/2,z+1/2</xyz>
+<mat>
+<row>[   1   0   0 ] [  1/2]</row>
+<row>[   0   1   0 ] [  1/2]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=207
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="207" symbol="P432">
+<generators>
+<!-- Generators of the group P432 -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>z,x,y</xyz>
+<mat>
+<row>[   0   0   1 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>y,x,-z</xyz>
+<mat>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=208
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="208" symbol="P4_232">
+<generators>
+<!-- Generators of the group P4_232 -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>z,x,y</xyz>
+<mat>
+<row>[   0   0   1 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>y+1/2,x+1/2,-z+1/2</xyz>
+<mat>
+<row>[   0   1   0 ] [  1/2]</row>
+<row>[   1   0   0 ] [  1/2]</row>
+<row>[   0   0  -1 ] [  1/2]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=209
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="209" symbol="F432">
+<generators>
+<!-- Generators of the group F432 -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>z,x,y</xyz>
+<mat>
+<row>[   0   0   1 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>y,x,-z</xyz>
+<mat>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>x,y+1/2,z+1/2</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [  1/2]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>x+1/2,y,z+1/2</xyz>
+<mat>
+<row>[   1   0   0 ] [  1/2]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=210
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="210" symbol="F4_132">
+<generators>
+<!-- Generators of the group F4_132 -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y+1/2,z+1/2</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [  1/2]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x+1/2,y+1/2,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [  1/2]</row>
+<row>[   0   1   0 ] [  1/2]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>z,x,y</xyz>
+<mat>
+<row>[   0   0   1 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>y+3/4,x+1/4,-z+3/4</xyz>
+<mat>
+<row>[   0   1   0 ] [  3/4]</row>
+<row>[   1   0   0 ] [  1/4]</row>
+<row>[   0   0  -1 ] [  3/4]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>x,y+1/2,z+1/2</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [  1/2]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>x+1/2,y,z+1/2</xyz>
+<mat>
+<row>[   1   0   0 ] [  1/2]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=211
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="211" symbol="I432">
+<generators>
+<!-- Generators of the group I432 -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>z,x,y</xyz>
+<mat>
+<row>[   0   0   1 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>y,x,-z</xyz>
+<mat>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>x+1/2,y+1/2,z+1/2</xyz>
+<mat>
+<row>[   1   0   0 ] [  1/2]</row>
+<row>[   0   1   0 ] [  1/2]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=212
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="212" symbol="P4_332">
+<generators>
+<!-- Generators of the group P4_332 -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x+1/2,-y,z+1/2</xyz>
+<mat>
+<row>[  -1   0   0 ] [  1/2]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,y+1/2,-z+1/2</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [  1/2]</row>
+<row>[   0   0  -1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>z,x,y</xyz>
+<mat>
+<row>[   0   0   1 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>y+1/4,x+3/4,-z+3/4</xyz>
+<mat>
+<row>[   0   1   0 ] [  1/4]</row>
+<row>[   1   0   0 ] [  3/4]</row>
+<row>[   0   0  -1 ] [  3/4]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=213
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="213" symbol="P4_132">
+<generators>
+<!-- Generators of the group P4_132 -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x+1/2,-y,z+1/2</xyz>
+<mat>
+<row>[  -1   0   0 ] [  1/2]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,y+1/2,-z+1/2</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [  1/2]</row>
+<row>[   0   0  -1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>z,x,y</xyz>
+<mat>
+<row>[   0   0   1 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>y+3/4,x+1/4,-z+1/4</xyz>
+<mat>
+<row>[   0   1   0 ] [  3/4]</row>
+<row>[   1   0   0 ] [  1/4]</row>
+<row>[   0   0  -1 ] [  1/4]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=214
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="214" symbol="I4_132">
+<generators>
+<!-- Generators of the group I4_132 -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x+1/2,-y,z+1/2</xyz>
+<mat>
+<row>[  -1   0   0 ] [  1/2]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,y+1/2,-z+1/2</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [  1/2]</row>
+<row>[   0   0  -1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>z,x,y</xyz>
+<mat>
+<row>[   0   0   1 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>y+3/4,x+1/4,-z+1/4</xyz>
+<mat>
+<row>[   0   1   0 ] [  3/4]</row>
+<row>[   1   0   0 ] [  1/4]</row>
+<row>[   0   0  -1 ] [  1/4]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>x+1/2,y+1/2,z+1/2</xyz>
+<mat>
+<row>[   1   0   0 ] [  1/2]</row>
+<row>[   0   1   0 ] [  1/2]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=215
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="215" symbol="P-43m">
+<generators>
+<!-- Generators of the group P-43m -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>z,x,y</xyz>
+<mat>
+<row>[   0   0   1 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>y,x,z</xyz>
+<mat>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=216
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="216" symbol="F-43m">
+<generators>
+<!-- Generators of the group F-43m -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>z,x,y</xyz>
+<mat>
+<row>[   0   0   1 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>y,x,z</xyz>
+<mat>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>x,y+1/2,z+1/2</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [  1/2]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>x+1/2,y,z+1/2</xyz>
+<mat>
+<row>[   1   0   0 ] [  1/2]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=217
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="217" symbol="I-43m">
+<generators>
+<!-- Generators of the group I-43m -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>z,x,y</xyz>
+<mat>
+<row>[   0   0   1 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>y,x,z</xyz>
+<mat>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>x+1/2,y+1/2,z+1/2</xyz>
+<mat>
+<row>[   1   0   0 ] [  1/2]</row>
+<row>[   0   1   0 ] [  1/2]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=218
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="218" symbol="P-43n">
+<generators>
+<!-- Generators of the group P-43n -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>z,x,y</xyz>
+<mat>
+<row>[   0   0   1 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>y+1/2,x+1/2,z+1/2</xyz>
+<mat>
+<row>[   0   1   0 ] [  1/2]</row>
+<row>[   1   0   0 ] [  1/2]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=219
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="219" symbol="F-43c">
+<generators>
+<!-- Generators of the group F-43c -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>z,x,y</xyz>
+<mat>
+<row>[   0   0   1 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>y+1/2,x+1/2,z+1/2</xyz>
+<mat>
+<row>[   0   1   0 ] [  1/2]</row>
+<row>[   1   0   0 ] [  1/2]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>x,y+1/2,z+1/2</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [  1/2]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>x+1/2,y,z+1/2</xyz>
+<mat>
+<row>[   1   0   0 ] [  1/2]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=220
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="220" symbol="I-43d">
+<generators>
+<!-- Generators of the group I-43d -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x+1/2,-y,z+1/2</xyz>
+<mat>
+<row>[  -1   0   0 ] [  1/2]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,y+1/2,-z+1/2</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [  1/2]</row>
+<row>[   0   0  -1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>z,x,y</xyz>
+<mat>
+<row>[   0   0   1 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>y+1/4,x+1/4,z+1/4</xyz>
+<mat>
+<row>[   0   1   0 ] [  1/4]</row>
+<row>[   1   0   0 ] [  1/4]</row>
+<row>[   0   0   1 ] [  1/4]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>x+1/2,y+1/2,z+1/2</xyz>
+<mat>
+<row>[   1   0   0 ] [  1/2]</row>
+<row>[   0   1   0 ] [  1/2]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=221
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="221" symbol="Pm-3m">
+<generators>
+<!-- Generators of the group Pm-3m -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>z,x,y</xyz>
+<mat>
+<row>[   0   0   1 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>y,x,-z</xyz>
+<mat>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=222
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="222" symbol="Pn-3n">
+<generators>
+<!-- Generators of the group Pn-3n -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x+1/2,-y+1/2,z</xyz>
+<mat>
+<row>[  -1   0   0 ] [  1/2]</row>
+<row>[   0  -1   0 ] [  1/2]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x+1/2,y,-z+1/2</xyz>
+<mat>
+<row>[  -1   0   0 ] [  1/2]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>z,x,y</xyz>
+<mat>
+<row>[   0   0   1 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>y,x,-z+1/2</xyz>
+<mat>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   0  -1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=223
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="223" symbol="Pm-3n">
+<generators>
+<!-- Generators of the group Pm-3n -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>z,x,y</xyz>
+<mat>
+<row>[   0   0   1 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>y+1/2,x+1/2,-z+1/2</xyz>
+<mat>
+<row>[   0   1   0 ] [  1/2]</row>
+<row>[   1   0   0 ] [  1/2]</row>
+<row>[   0   0  -1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=224
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="224" symbol="Pn-3m">
+<generators>
+<!-- Generators of the group Pn-3m -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x+1/2,-y+1/2,z</xyz>
+<mat>
+<row>[  -1   0   0 ] [  1/2]</row>
+<row>[   0  -1   0 ] [  1/2]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x+1/2,y,-z+1/2</xyz>
+<mat>
+<row>[  -1   0   0 ] [  1/2]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>z,x,y</xyz>
+<mat>
+<row>[   0   0   1 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>y+1/2,x+1/2,-z</xyz>
+<mat>
+<row>[   0   1   0 ] [  1/2]</row>
+<row>[   1   0   0 ] [  1/2]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=225
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="225" symbol="Fm-3m">
+<generators>
+<!-- Generators of the group Fm-3m -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>z,x,y</xyz>
+<mat>
+<row>[   0   0   1 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>y,x,-z</xyz>
+<mat>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>x,y+1/2,z+1/2</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [  1/2]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>x+1/2,y,z+1/2</xyz>
+<mat>
+<row>[   1   0   0 ] [  1/2]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=226
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="226" symbol="Fm-3c">
+<generators>
+<!-- Generators of the group Fm-3c -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>z,x,y</xyz>
+<mat>
+<row>[   0   0   1 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>y+1/2,x+1/2,-z+1/2</xyz>
+<mat>
+<row>[   0   1   0 ] [  1/2]</row>
+<row>[   1   0   0 ] [  1/2]</row>
+<row>[   0   0  -1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>x,y+1/2,z+1/2</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [  1/2]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>x+1/2,y,z+1/2</xyz>
+<mat>
+<row>[   1   0   0 ] [  1/2]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=227
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="227" symbol="Fd-3m">
+<generators>
+<!-- Generators of the group Fd-3m -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x+3/4,-y+1/4,z+1/2</xyz>
+<mat>
+<row>[  -1   0   0 ] [  3/4]</row>
+<row>[   0  -1   0 ] [  1/4]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x+1/4,y+1/2,-z+3/4</xyz>
+<mat>
+<row>[  -1   0   0 ] [  1/4]</row>
+<row>[   0   1   0 ] [  1/2]</row>
+<row>[   0   0  -1 ] [  3/4]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>z,x,y</xyz>
+<mat>
+<row>[   0   0   1 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>y+3/4,x+1/4,-z+1/2</xyz>
+<mat>
+<row>[   0   1   0 ] [  3/4]</row>
+<row>[   1   0   0 ] [  1/4]</row>
+<row>[   0   0  -1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>x,y+1/2,z+1/2</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [  1/2]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>x+1/2,y,z+1/2</xyz>
+<mat>
+<row>[   1   0   0 ] [  1/2]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=228
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="228" symbol="Fd-3c">
+<generators>
+<!-- Generators of the group Fd-3c -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x+1/4,-y+3/4,z+1/2</xyz>
+<mat>
+<row>[  -1   0   0 ] [  1/4]</row>
+<row>[   0  -1   0 ] [  3/4]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x+3/4,y+1/2,-z+1/4</xyz>
+<mat>
+<row>[  -1   0   0 ] [  3/4]</row>
+<row>[   0   1   0 ] [  1/2]</row>
+<row>[   0   0  -1 ] [  1/4]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>z,x,y</xyz>
+<mat>
+<row>[   0   0   1 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>y+3/4,x+1/4,-z</xyz>
+<mat>
+<row>[   0   1   0 ] [  3/4]</row>
+<row>[   1   0   0 ] [  1/4]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>x,y+1/2,z+1/2</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [  1/2]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>x+1/2,y,z+1/2</xyz>
+<mat>
+<row>[   1   0   0 ] [  1/2]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=229
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="229" symbol="Im-3m">
+<generators>
+<!-- Generators of the group Im-3m -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>z,x,y</xyz>
+<mat>
+<row>[   0   0   1 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>y,x,-z</xyz>
+<mat>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>x+1/2,y+1/2,z+1/2</xyz>
+<mat>
+<row>[   1   0   0 ] [  1/2]</row>
+<row>[   0   1   0 ] [  1/2]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
+spawn telnet www.cryst.ehu.es 80
+Trying 158.227.0.68...
+Connected to cryst.ehu.es.
+Escape character is '^]'.
+GET /cgi-bin/cryst/xml/nph-get_doc?p=gener&g=230
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE bcs_group PUBLIC "bcs_group" "http://www.cryst.ehu.es/html/dtd/bcs_group.dtd">
+
+<bcs_group>
+<!-- Bilbao Crystallographic Server (www.cryst.ehu.es) -->
+<group number="230" symbol="Ia-3d">
+<generators>
+<!-- Generators of the group Ia-3d -->
+<genpos>
+<xyz>x,y,z</xyz>
+<mat>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+<row>[   0   0   1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x+1/2,-y,z+1/2</xyz>
+<mat>
+<row>[  -1   0   0 ] [  1/2]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,y+1/2,-z+1/2</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [  1/2]</row>
+<row>[   0   0  -1 ] [  1/2]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>z,x,y</xyz>
+<mat>
+<row>[   0   0   1 ] [    0]</row>
+<row>[   1   0   0 ] [    0]</row>
+<row>[   0   1   0 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>y+3/4,x+1/4,-z+1/4</xyz>
+<mat>
+<row>[   0   1   0 ] [  3/4]</row>
+<row>[   1   0   0 ] [  1/4]</row>
+<row>[   0   0  -1 ] [  1/4]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>-x,-y,-z</xyz>
+<mat>
+<row>[  -1   0   0 ] [    0]</row>
+<row>[   0  -1   0 ] [    0]</row>
+<row>[   0   0  -1 ] [    0]</row>
+</mat>
+</genpos>
+<genpos>
+<xyz>x+1/2,y+1/2,z+1/2</xyz>
+<mat>
+<row>[   1   0   0 ] [  1/2]</row>
+<row>[   0   1   0 ] [  1/2]</row>
+<row>[   0   0   1 ] [  1/2]</row>
+</mat>
+</genpos>
+<!-- end of the list -->
+</generators>
+</group>
+</bcs_group>
+Connection closed by foreign host.
