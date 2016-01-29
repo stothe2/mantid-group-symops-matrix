@@ -10,7 +10,9 @@
 
 1. Handling exceptions. Would eventually need to make appropriate changes to `MantidKernal/Exception.h`.
 2. Make the code more user-friendly by allowing users to select which symmetry operations they want to use through a GUI. Look at [`VisibleWhenProperty`](http://docs.mantidproject.org/nightly/api/python/mantid/kernel/VisibleWhenProperty.html) and [`EnabledWhenProperty`](http://docs.mantidproject.org/nightly/api/python/mantid/kernel/EnabledWhenProperty.html). Current version of Mantid source code doesn't allow multiple property settings, and only the last one is used. Any way around this issue?
-3. Write test cases.
+3. Provide choice for number of basis vectors.
+4. Implement non-aligned axes binning.
+5. Write test cases.
 
 ## Symmetry operations
 The space group generators list was extracted from [Bilbao](http://www.cryst.ehu.es/cryst/get_gen.html), and it was seen that there are some operations missing in Mantid; and also that there are some operations present in Mantid that aren't in the Bilbao file. Possible reason? Bilbao has a total of 83 operations while Mantid has 70.
