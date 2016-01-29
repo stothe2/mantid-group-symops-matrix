@@ -39,5 +39,5 @@ def compare_symops():
 		print e
 
 #extract_from_dump()
-#unique_symops()
-compare_symops()
+unique_symops()
+#compare_symops()
