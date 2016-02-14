@@ -3,7 +3,7 @@
 ## To think about
 
 1. Switch to using `SymmetryOperationFactory` for generating symmetry operation vectors instead of manually storing matrices and carring out matrix multiplication. See [here](http://docs.mantidproject.org/nightly/concepts/SymmetryGroups.html). However, note that when you call function `subscribedSymbols()`, you'll see that not all symmetry operations are listed. A way around this is to register all symmetry operations beforehand (that is, in `PyInit` section of the algorithm).
-2. Instead of having the user to enter the space group, create a list of all symmetry operations (there are only a few dozen or so), and allow the user to select them through a GUI.
+2. Instead of having the user to enter the space group, create a list of all symmetry operations (there are only a few dozen or so), and allow the user to select them through a GUI. There are three ways to go about this: register symmetry operations and their corresponding translation vectors separately, write a handler that separates translation terms from any symmetry operation string, or change the Mantid source code (`SymmetryOperationFactory`) to include a function that returns translation components.
 3. Normalization.
 
 ## Work in-progress
