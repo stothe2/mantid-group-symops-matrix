@@ -5,7 +5,7 @@ from mantid.geometry import SymmetryOperationFactory
 from collections import defaultdict
 from numpy import array
 from numpy import dot
-from math import modf # to split number into int and decimal parts
+import re
 
 # Space group matrices without translation column
 sg = [	(1, array([[1, 0, 0], [0, 1, 0], [0, 0, 1]])), # Triclinic
@@ -45,6 +45,9 @@ sg = [	(1, array([[1, 0, 0], [0, 1, 0], [0, 0, 1]])), # Triclinic
 		(22, array([[-1, 0, 0], [0, 1, 0], [0, 0, -1]])),
 		(23, array([[-1, 0, 0], [0, -1, 0], [0, 0, 1]])),
 		(23, array([[-1, 0, 0], [0, 1, 0], [0, 0, -1]])),
+		(143, array([[1, 0, 0], [0, 1, 0], [0, 0, 1]])),
+		(143, array([[0, -1, 0], [1, -1, 0], [0, 0, 1]])),
+		(198, array([[1, 0, 0], [0, 1, 0], [0, 0, 1]])),
 		(198, array([[-1, 0, 0], [0, -1, 0], [0, 0, 1]])),
 		(198, array([[-1, 0, 0], [0, 1, 0], [0, 0, -1]])),
 		(198, array([[0, 0, 1], [1, 0, 0], [0, 1, 0]]))]
@@ -90,6 +93,9 @@ t = [	(1, array([0,0,0,0])), # Triclinic
 		(22, array([0,0,0,0])),
 		(23, array([0,0,0,0])),
 		(23, array([0,0,0,0])),
+		(143, array([0,0,0,0])),
+		(143, array([0,0,0,0])),
+		(198, array([0,0,0,0])),
 		(198, array([0.5,0,0.5,0])),
 		(198, array([0,0.5,0.5,0])),
 		(198, array([0,0,0,0]))]
@@ -302,11 +308,17 @@ class SpaceGroupSymOps(PythonAlgorithm):
 			newBasisVec0 = dot(item, basisVec0)
 			newBasisVec1 = dot(item, basisVec1)
 
+			print item
+
 			basisVec0_str = unit0[0] + ',' + unit0[1] + ',' + str(newBasisVec0[0]) \
 							+ ',' + str(newBasisVec0[1]) + ',' + str(newBasisVec0[2]) + ',' + '0'
 			basisVec1_str = unit1[0] + ',' + unit1[1] + ',' + str(newBasisVec1[0]) \
 							+ ',' + str(newBasisVec1[1]) + ',' + str(newBasisVec1[2]) + ',' + '0'
 			newTranslation = translation + dict_t[sgNumber][index]
+
+			print basisVec0_str
+			print basisVec1_str
+			print newTranslation
 
 			binned_ws += BinMD(InputWorkspace=mdws, AxisAligned=axisAligned,
 						BasisVector0=basisVec0_str, BasisVector1=basisVec1_str,
@@ -324,29 +336,29 @@ class SpaceGroupSymOps(PythonAlgorithm):
 
 		symOpList = [symOp1, symOp2, symOp3, symOp4, symOp5]
 		for i in range(numOp):
-			symOp = SymmetryOperationFactory.createSymOp(symOpList[i])
+			s, newTranslation = self._get_symop_and_translation(symOpList[i])
+
+			symOp = SymmetryOperationFactory.createSymOp(s)
+			print s
 			
-			# x-value
-			coordinates, newTranslation = self._get_coordinates_with_translation([0, 1, 0], symOp)
-			newTranslation += translation # Factor in for the original translation reading
-			x0_value = dot(coordinates, basisVec0)
-			x1_value = dot(coordinates, basisVec1)
+			coordinatesPrime0 = symOp.transformCoordinates(basisVec0)
+			coordinatesPrime1 = symOp.transformCoordinates(basisVec1)
 
-			# y-value
-			coordinates = self._get_coordinates([0, 1, 0], symOp)
-			y0_value = dot(coordinates, basisVec0)
-			y1_value = dot(coordinates, basisVec1)
+			newBasisVec0 = [coordinatesPrime0.getX(), coordinatesPrime0.getY(), coordinatesPrime0.getZ()]
+			newBasisVec1 = [coordinatesPrime1.getX(), coordinatesPrime1.getY(), coordinatesPrime1.getZ()]
 
-			# z-value
-			coordinates = self._get_coordinates([0, 0, 1], symOp)
-			z0_value = dot(coordinates, basisVec0)
-			z1_value = dot(coordinates, basisVec1)
+			# Factor in for the original translation reading
+			newTranslation += translation
 
 			# Combine values x,y,z values obtained above for new basis vectors
-			basisVec0_str = unit0[0] + ',' + unit0[1] + ',' + str(x0_value) \
-							+ ',' + str(y0_value) + ',' + str(z0_value) + ',' + '0'
-			basisVec1_str = unit1[0] + ',' + unit1[1] + ',' + str(x1_value) \
-							+ ',' + str(y1_value) + ',' + str(z1_value) + ',' + '0'
+			basisVec0_str = unit0[0] + ',' + unit0[1] + ',' + str(coordinatesPrime0.getX()) \
+							+ ',' + str(coordinatesPrime0.getY()) + ',' + str(coordinatesPrime0.getZ()) + ',' + '0'
+			basisVec1_str = unit1[0] + ',' + unit1[1] + ',' + str(coordinatesPrime1.getX()) \
+							+ ',' + str(coordinatesPrime1.getY()) + ',' + str(coordinatesPrime1.getZ()) + ',' + '0'
+
+			print basisVec0_str
+			print basisVec1_str
+			print newTranslation
 
 			binned_ws += BinMD(InputWorkspace=mdws, AxisAligned=axisAligned,
 						BasisVector0=basisVec0_str, BasisVector1=basisVec1_str,
@@ -362,47 +374,57 @@ class SpaceGroupSymOps(PythonAlgorithm):
 		return unit, array([int(temp[0]), int(temp[1]), int(temp[2])])
 
 
-	def _get_coordinates(self, coordinates, symOp):
-		''' Split coordinates into int (basis) and decimal (translation) parts,
-		but return only int part 
-		'''
-		coordinatesPrime = symOp.transformCoordinates(coordinates)
-		newCoordinatesPrime = []
-			
-		splitNum = modf(coordinatesPrime.getX()) # 1st number
-		newCoordinatesPrime.append(splitNum[1])
-			
-		splitNum = modf(coordinatesPrime.getY()) # 2nd number
-		newCoordinatesPrime.append(splitNum[1])
-			
-		splitNum = modf(coordinatesPrime.getZ()) # 3rd number
-		newCoordinatesPrime.append(splitNum[1])
+	def _get_symop_and_translation(self, symOp):
+		s_list = symOp.split(",")
+		
+		x_translation = 0
+		y_translation = 0
+		z_translation = 0
+		
+		for i, item in enumerate(s_list):
+			if len(item) > 2:
+				if i == 0:
+					index = re.search("[xyz]", item).start()
+					x_translation = item[index+1:]
+					x_coord = item[:index+1]
+					try:
+						num, denom = x_translation.split('/')
+						x_translation = float(num) / float(denom)
+					except:
+						x_translation = 0
+						x_coord = item
+				elif i == 1:
+					index = re.search("[xyz]", item).start()
+					y_translation = item[index+1:]
+					y_coord = item[:index+1]
+					try:
+						num, denom = y_translation.split('/')
+						y_translation = float(num) / float(denom)
+					except:
+						y_translation = 0
+						y_coord = item
+				elif i == 2:
+					index = re.search("[xyz]", item).start()
+					z_translation = item[index+1:]
+					z_coord = item[:index+1]
+					try:
+						num, denom = z_translation.split('/')
+						z_translation = float(num) / float(denom)
+					except:
+						z_translation = 0
+						z_coord = item
+			else:
+				if i == 0:
+					x_coord = item
+				elif i == 1:
+					y_coord = item
+				elif i == 2:
+					z_coord = item
 
-		return newCoordinatesPrime
+		s = x_coord + ',' + y_coord + ',' + z_coord
+		t = [x_translation, y_translation, z_translation, 0]
 
-	def _get_coordinates_with_translation(self, coordinates, symOp):
-		''' Split coordinates into int (basis) and decimal (translation) parts,
-		and return both int and translation parts 
-		'''
-		coordinatesPrime = symOp.transformCoordinates(coordinates)
-		newCoordinatesPrime = []
-		newTranslation = []
-		
-		splitNum = modf(coordinatesPrime.getX()) # 1st number
-		newCoordinatesPrime.append(splitNum[1])
-		newTranslation.append(splitNum[0])
-		
-		splitNum = modf(coordinatesPrime.getY()) # 2nd number
-		newCoordinatesPrime.append(splitNum[1])
-		newTranslation.append(splitNum[0])
-		
-		splitNum = modf(coordinatesPrime.getZ()) # 3rd number
-		newCoordinatesPrime.append(splitNum[1])
-		newTranslation.append(splitNum[0])
-
-		newTranslation.append(0) # Add energy dimension to the translation vector
-		
-		return newCoordinatesPrime, newTranslation
+		return s, t
 
 
 # Register algorithm with Mantid
