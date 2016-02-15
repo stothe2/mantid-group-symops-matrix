@@ -300,10 +300,10 @@ class SpaceGroupSymOps(PythonAlgorithm):
 			outputExtents = [float(extent0[0]),float(extent0[1]),float(extent1[0]),float(extent1[1])]
 			outputBins = [int(bins0),int(bins1)]
 
-        binned_ws = BinMD(InputWorkspace=mdws, AxisAligned=False,
-					BasisVector0=basis0, BasisVector1=basis1,
-					NormalizeBasisVectors=normalizeBasisVectors, Translation=translation,
-					OutputExtents=outputExtents, OutputBins=outputBins)
+		binned_ws = BinMD(InputWorkspace=mdws, AxisAligned=False,
+			BasisVector0=basis0, BasisVector1=basis1,
+			NormalizeBasisVectors=normalizeBasisVectors, Translation=translation,
+			OutputExtents=outputExtents, OutputBins=outputBins)
 
 		if symChoice == "Symmetry Operations":
 			binned_ws = self._symmetrize_by_generators(mdws, False, basis0, basis1,
@@ -311,7 +311,7 @@ class SpaceGroupSymOps(PythonAlgorithm):
 				int(numOp), symOp1, symOp2, symOp3, symOp4, symOp5)
 		else:
 			binned_ws = self._symmetrize_by_sg(mdws, False, basis0, basis1,
-                normalizeBasisVectors, translation, outputExtents, outputBins, binned_ws,
+				normalizeBasisVectors, translation, outputExtents, outputBins, binned_ws,
 				sgNumber)
 
 		self.setProperty("Binned Workspace", binned_ws)
@@ -345,9 +345,9 @@ class SpaceGroupSymOps(PythonAlgorithm):
 			print newTranslation
 
 			binned_ws += BinMD(InputWorkspace=mdws, AxisAligned=axisAligned,
-						BasisVector0=basisVec0_str, BasisVector1=basisVec1_str,
-						NormalizeBasisVectors=normalizeBasisVectors, Translation=newTranslation,
-						OutputExtents=outputExtents, OutputBins=outputBins)
+				BasisVector0=basisVec0_str, BasisVector1=basisVec1_str,
+				NormalizeBasisVectors=normalizeBasisVectors, Translation=newTranslation,
+				OutputExtents=outputExtents, OutputBins=outputBins)
 		return binned_ws
 
 
@@ -385,9 +385,9 @@ class SpaceGroupSymOps(PythonAlgorithm):
 			print newTranslation
 
 			binned_ws += BinMD(InputWorkspace=mdws, AxisAligned=axisAligned,
-						BasisVector0=basisVec0_str, BasisVector1=basisVec1_str,
-						NormalizeBasisVectors=normalizeBasisVectors, Translation=newTranslation,
-						OutputExtents=outputExtents, OutputBins=outputBins)
+				BasisVector0=basisVec0_str, BasisVector1=basisVec1_str,
+				NormalizeBasisVectors=normalizeBasisVectors, Translation=newTranslation,
+				OutputExtents=outputExtents, OutputBins=outputBins)
 		return binned_ws
 
 
