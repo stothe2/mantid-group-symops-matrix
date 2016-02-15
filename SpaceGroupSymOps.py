@@ -224,9 +224,11 @@ class SpaceGroupSymOps(PythonAlgorithm):
 		self.setPropertyGroup('Symmetry operation 5', sym_grp)
 
 		# Binning properties
+		self.declareProperty('Axis Aligned', False, 'Perform binning aligned with the axes of the input MDEventWorkspace?')
+		self.declareProperty('AlignedDim0', 'h,-3,3,1', StringMandatoryValidator(), 'Format: \'name,limits,bins\'')
+		self.declareProperty('AlignedDim1', 'k,-3,3,1', StringMandatoryValidator(), 'Format: \'name,limits,bins\'')
 		self.declareProperty('BasisVector0', 'a,unit,1,1,0,0', StringMandatoryValidator(), 'Format: \'name,units,x,y,z\'')
 		self.declareProperty('BasisVector1', 'b,unit,0,0,1,0', StringMandatoryValidator(), 'Format: \'name,units,x,y,z\'')
-		self.declareProperty('Axis Aligned', False, 'Perform binning aligned with the axes of the input MDEventWorkspace?')
 		self.declareProperty('Normalized Basis Vectors', True, 'Normalize the given basis vectors to unity')
 		self.declareProperty(FloatArrayProperty(name='Output Extents',
 												values=[-5,8,-5,8],
@@ -244,10 +246,22 @@ class SpaceGroupSymOps(PythonAlgorithm):
 												defaultValue='',
 												direction=Direction.Input), 'An input MDWorkspace')
 
+
+		self.setPropertySettings('AlignedDim0',VisibleWhenProperty('Axis Aligned', PropertyCriterion.IsNotDefault))
+		self.setPropertySettings('AlignedDim1', VisibleWhenProperty('Axis Aligned', PropertyCriterion.IsNotDefault))
+		self.setPropertySettings('BasisVector0', VisibleWhenProperty('Axis Aligned', PropertyCriterion.IsDefault))
+		self.setPropertySettings('BasisVector1', VisibleWhenProperty('Axis Aligned', PropertyCriterion.IsDefault))
+		self.setPropertySettings('Normalized Basis Vectors', VisibleWhenProperty('Axis Aligned',PropertyCriterion.IsDefault))
+		self.setPropertySettings('Output Extents', VisibleWhenProperty('Axis Aligned', PropertyCriterion.IsDefault))
+		self.setPropertySettings('Output Bins', VisibleWhenProperty('Axis Aligned', PropertyCriterion.IsDefault))
+		self.setPropertySettings('Translation', VisibleWhenProperty('Axis Aligned', PropertyCriterion.IsDefault))
+
 		bin_grp = 'Binning parameters'
+		self.setPropertyGroup('Axis Aligned', bin_grp)
+		self.setPropertyGroup('AlignedDim0', bin_grp)
+		self.setPropertyGroup('AlignedDim1', bin_grp)
 		self.setPropertyGroup('BasisVector0', bin_grp)
 		self.setPropertyGroup('BasisVector1', bin_grp)
-		self.setPropertyGroup('Axis Aligned', bin_grp)
 		self.setPropertyGroup('Normalized Basis Vectors', bin_grp)
 		self.setPropertyGroup('Output Extents', bin_grp)
 		self.setPropertyGroup('Output Bins', bin_grp)
@@ -261,6 +275,8 @@ class SpaceGroupSymOps(PythonAlgorithm):
 	def PyExec(self):
 		sgNumber = self.getProperty('Space Group').value
 		mdws = self.getProperty('Input Workspace').value
+		Adim0 = self.getProperty('AlignedDim0').value
+		Adim1 = self.getProperty('AlignedDim1').value
 		basis0 = self.getProperty('BasisVector0').value
 		basis1 = self.getProperty('BasisVector1').value
 		axisAligned = self.getProperty('Axis Aligned').value
@@ -276,18 +292,26 @@ class SpaceGroupSymOps(PythonAlgorithm):
 		symOp4 = self.getProperty('Symmetry operation 4').value
 		symOp5 = self.getProperty('Symmetry operation 5').value
 
-		binned_ws = BinMD(InputWorkspace=mdws, AxisAligned=axisAligned,
+		if axisAligned == True:
+			translation = [0,0,0,0]
+			basis0, extent0, bins0 = self.ConvertToNonAA(Adim0)
+			basis1, extent1, bins1 = self.ConvertToNonAA(Adim1)
+
+			outputExtents = [float(extent0[0]),float(extent0[1]),float(extent1[0]),float(extent1[1])]
+			outputBins = [int(bins0),int(bins1)]
+
+        binned_ws = BinMD(InputWorkspace=mdws, AxisAligned=False,
 					BasisVector0=basis0, BasisVector1=basis1,
 					NormalizeBasisVectors=normalizeBasisVectors, Translation=translation,
 					OutputExtents=outputExtents, OutputBins=outputBins)
 
 		if symChoice == "Symmetry Operations":
-			binned_ws = self._symmetrize_by_generators(mdws, axisAligned, basis0, basis1,
+			binned_ws = self._symmetrize_by_generators(mdws, False, basis0, basis1,
 				normalizeBasisVectors, translation, outputExtents, outputBins, binned_ws,
 				int(numOp), symOp1, symOp2, symOp3, symOp4, symOp5)
 		else:
-			binned_ws = self._symmetrize_by_sg(mdws, axisAligned, basis0, basis1,
-				normalizeBasisVectors, translation, outputExtents, outputBins, binned_ws,
+			binned_ws = self._symmetrize_by_sg(mdws, False, basis0, basis1,
+                normalizeBasisVectors, translation, outputExtents, outputBins, binned_ws,
 				sgNumber)
 
 		self.setProperty("Binned Workspace", binned_ws)
@@ -336,6 +360,7 @@ class SpaceGroupSymOps(PythonAlgorithm):
 
 		symOpList = [symOp1, symOp2, symOp3, symOp4, symOp5]
 		for i in range(numOp):
+<<<<<<< HEAD
 			s, newTranslation = self._get_symop_and_translation(symOpList[i])
 
 			symOp = SymmetryOperationFactory.createSymOp(s)
@@ -425,6 +450,25 @@ class SpaceGroupSymOps(PythonAlgorithm):
 		t = [x_translation, y_translation, z_translation, 0]
 
 		return s, t
+
+
+	def ConvertToNonAA(self,AlignedInput):
+		temp = AlignedInput.split(',')
+		name = temp[0]
+		extent = temp[1:3]
+		numbins = temp[3]
+
+		#Build basis vector
+		if name == 'h':
+			BVect = 'h,rlu,1,0,0,0'
+		elif name == 'k':
+			BVect = 'k,rlu,0,1,0,0'
+		elif name == 'l':
+			BVect = 'l,rlu,0,0,1,0'
+		elif name == 'E':
+			BVect = 'E,eV,0,0,0,1'
+
+		return BVect, extent, numbins
 
 
 # Register algorithm with Mantid
