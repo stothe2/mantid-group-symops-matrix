@@ -20,3 +20,7 @@ pythonInterface/makefile
 pythonInterface/Symmetrize.cpp
 
 pythonInterface/test.py
+
+SymOpsWithoutMatrices.py
+
+test.py
