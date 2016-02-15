@@ -360,7 +360,6 @@ class SpaceGroupSymOps(PythonAlgorithm):
 
 		symOpList = [symOp1, symOp2, symOp3, symOp4, symOp5]
 		for i in range(numOp):
-<<<<<<< HEAD
 			s, newTranslation = self._get_symop_and_translation(symOpList[i])
 
 			symOp = SymmetryOperationFactory.createSymOp(s)
