@@ -227,21 +227,21 @@ class SpaceGroupSymOps(PythonAlgorithm):
 		self.declareProperty('Axis Aligned', False, 'Perform binning aligned with the axes of the input MDEventWorkspace?')
 		self.declareProperty('AlignedDim0', 'h,-3,3,1', StringMandatoryValidator(), 'Format: \'name,limits,bins\'')
 		self.declareProperty('AlignedDim1', 'k,-3,3,1', StringMandatoryValidator(), 'Format: \'name,limits,bins\'')
-		self.declareProperty('BasisVector0', 'a,unit,1,1,0,0', StringMandatoryValidator(), 'Format: \'name,units,x,y,z\'')
-		self.declareProperty('BasisVector1', 'b,unit,0,0,1,0', StringMandatoryValidator(), 'Format: \'name,units,x,y,z\'')
-		self.declareProperty('Normalized Basis Vectors', True, 'Normalize the given basis vectors to unity')
-		self.declareProperty(FloatArrayProperty(name='Output Extents',
-												values=[-5,8,-5,8],
-												validator=FloatArrayLengthValidator(4)),
-			'The minimum, maximum edges of space of each dimension of the OUTPUT workspace, as a comma-separated list')
 		self.declareProperty(FloatArrayProperty(name='Output Bins',
 												values=[50,50],
 												validator=FloatArrayLengthValidator(2)),
 			'The number of bins for each dimension of the OUTPUT workspace')
+		self.declareProperty(FloatArrayProperty(name='Output Extents',
+												values=[-5,8,-5,8],
+												validator=FloatArrayLengthValidator(4)),
+			'The minimum, maximum edges of space of each dimension of the OUTPUT workspace, as a comma-separated list')
 		self.declareProperty(FloatArrayProperty(name='Translation',
 												values=[0,0,0,0],
 												validator=FloatArrayLengthValidator(4)),
 			'Coordinates in the INPUT workspace that corresponds to (0,0,0) in the OUTPUT workspace')
+		self.declareProperty('Normalise Basis Vectors', True, 'Normalize the given basis vectors to unity')
+		self.declareProperty('BasisVector0', 'a,unit,1,1,0,0', StringMandatoryValidator(), 'Format: \'name,units,x,y,z\'')
+		self.declareProperty('BasisVector1', 'b,unit,0,0,1,0', StringMandatoryValidator(), 'Format: \'name,units,x,y,z\'')
 		self.declareProperty(WorkspaceProperty(name='Input Workspace',
 												defaultValue='',
 												direction=Direction.Input), 'An input MDWorkspace')
@@ -249,23 +249,25 @@ class SpaceGroupSymOps(PythonAlgorithm):
 
 		self.setPropertySettings('AlignedDim0',VisibleWhenProperty('Axis Aligned', PropertyCriterion.IsNotDefault))
 		self.setPropertySettings('AlignedDim1', VisibleWhenProperty('Axis Aligned', PropertyCriterion.IsNotDefault))
+		self.setPropertySettings('Output Bins', EnabledWhenProperty('Axis Aligned', PropertyCriterion.IsDefault))
+		self.setPropertySettings('Output Extents', EnabledWhenProperty('Axis Aligned', PropertyCriterion.IsDefault))
+		self.setPropertySettings('Translation', EnabledWhenProperty('Axis Aligned', PropertyCriterion.IsDefault))
+		self.setPropertySettings('Normalise Basis Vectors', EnabledWhenProperty('Axis Aligned',PropertyCriterion.IsDefault))
 		self.setPropertySettings('BasisVector0', VisibleWhenProperty('Axis Aligned', PropertyCriterion.IsDefault))
 		self.setPropertySettings('BasisVector1', VisibleWhenProperty('Axis Aligned', PropertyCriterion.IsDefault))
-		self.setPropertySettings('Normalized Basis Vectors', VisibleWhenProperty('Axis Aligned',PropertyCriterion.IsDefault))
-		self.setPropertySettings('Output Extents', VisibleWhenProperty('Axis Aligned', PropertyCriterion.IsDefault))
-		self.setPropertySettings('Output Bins', VisibleWhenProperty('Axis Aligned', PropertyCriterion.IsDefault))
-		self.setPropertySettings('Translation', VisibleWhenProperty('Axis Aligned', PropertyCriterion.IsDefault))
 
-		bin_grp = 'Binning parameters'
-		self.setPropertyGroup('Axis Aligned', bin_grp)
-		self.setPropertyGroup('AlignedDim0', bin_grp)
-		self.setPropertyGroup('AlignedDim1', bin_grp)
-		self.setPropertyGroup('BasisVector0', bin_grp)
-		self.setPropertyGroup('BasisVector1', bin_grp)
-		self.setPropertyGroup('Normalized Basis Vectors', bin_grp)
-		self.setPropertyGroup('Output Extents', bin_grp)
-		self.setPropertyGroup('Output Bins', bin_grp)
-		self.setPropertyGroup('Translation', bin_grp)
+		align_grp = 'Axis-Aligned Binning'
+		self.setPropertyGroup('Axis Aligned', align_grp)
+		self.setPropertyGroup('AlignedDim0', align_grp)
+		self.setPropertyGroup('AlignedDim1', align_grp)
+
+		nonalign_grp = 'Non Axis-Aligned Binning'
+		self.setPropertyGroup('BasisVector0', nonalign_grp)
+		self.setPropertyGroup('BasisVector1', nonalign_grp)
+		self.setPropertyGroup('Normalise Basis Vectors', nonalign_grp)
+		self.setPropertyGroup('Output Extents', nonalign_grp)
+		self.setPropertyGroup('Output Bins', nonalign_grp)
+		self.setPropertyGroup('Translation', nonalign_grp)
 
 		# ------------------------- Output properties ------------------------
 		self.declareProperty(WorkspaceProperty(name='Binned Workspace',
@@ -280,7 +282,7 @@ class SpaceGroupSymOps(PythonAlgorithm):
 		basis0 = self.getProperty('BasisVector0').value
 		basis1 = self.getProperty('BasisVector1').value
 		axisAligned = self.getProperty('Axis Aligned').value
-		normalizeBasisVectors = self.getProperty('Normalized Basis Vectors').value
+		normalizeBasisVectors = self.getProperty('Normalise Basis Vectors').value
 		outputExtents = self.getProperty('Output Extents').value
 		outputBins = self.getProperty('Output Bins').value
 		translation = self.getProperty('Translation').value
