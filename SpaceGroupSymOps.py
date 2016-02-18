@@ -300,6 +300,8 @@ class SpaceGroupSymOps(PythonAlgorithm):
 			translation = [0,0,0,0]
 			basis0, extent0, bins0 = self.ConvertToNonAA(Adim0)
 			basis1, extent1, bins1 = self.ConvertToNonAA(Adim1)
+			basis2 = None
+			basis3 = None
 
 			outputExtents = [float(extent0[0]),float(extent0[1]),float(extent1[0]),float(extent1[1])]
 			outputBins = [int(bins0),int(bins1)]
