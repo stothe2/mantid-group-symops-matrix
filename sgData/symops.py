@@ -38,6 +38,14 @@ def compare_symops():
 	for e in mantidSymOps - bilbaoSymOps:
 		print e
 
+def format():
+	f = open("SymmetryList.txt", "r")
+	for line in f:
+		line = line.rstrip("\n")
+		print '\'' + line + '\','
+	f.close()
+
 #extract_from_dump()
-unique_symops()
+#unique_symops()
 #compare_symops()
+format()

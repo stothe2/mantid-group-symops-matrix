@@ -105,88 +105,69 @@ for k, v in t:
 
 # Symmetry operation list
 symList = ['x,y,z',
-	'-x,-y,-z',
-	'-x,y,-z',
-	'-x,y+1/2,-z',
-	'x+1/2,y+1/2,z',
-	'x,-y,z',
-	'x,-y,z+1/2',
-	'-x,y,-z+1/2',
-	'-x,y+1/2,-z+1/2',
-	'-x,-y,z',
-	'-x,-y,z+1/2',
-	'-x+1/2,y+1/2,-z',
-	'-x+1/2,-y,z+1/2',
-	'x,y+1/2,z+1/2',
-	'x+1/2,y,z+1/2',
-	'x+1/2,y+1/2,z+1/2',
-	'x+1/2,-y,z',
-	'x,-y+1/2,z+1/2',
-	'x+1/2,-y,z+1/2',
-	'x+1/2,-y+1/2,z',
-	'x+1/2,-y+1/2,z+1/2',
-	'x,-y+1/2,z',
-	'x+1/4,-y+1/4,z+1/4',
-	'-x+1/2,-y+1/2,z',
-	'-x+1/2,y,-z+1/2',
-	'-x+1/2,y,-z',
-	'-x+1/2,-y,z',
-	'-x+1/2,y+1/2,-z+1/2',
-	'-x+1/2,-y+1/2,z+1/2',
-	'-x,-y+1/2,z+1/2',
-	'-x,-y+1/2,z',
-	'-x+3/4,-y+3/4,z',
-	'-x+3/4,y,-z+3/4',
-	'-y,x,z',
-	'-y,x,z+1/4',
-	'-y,x,z+1/2',
-	'-y,x,z+3/4',
-	'-y,x+1/2,z+1/4',
-	'y,-x,-z',
-	'-y+1/2,x,z',
-	'-y,x+1/2,z+1/2',
-	'-y+3/4,x+1/4,z+1/4',
-	'-y+1/2,x+1/2,z',
-	'-y+1/2,x+1/2,z+1/4',
-	'-x+1/2,y+1/2,-z+1/4',
-	'-y+1/2,x+1/2,z+1/2',
-	'-y+1/2,x+1/2,z+3/4',
-	'-x+1/2,y+1/2,-z+3/4',
-	'-x+1/2,y,-z+3/4',
-	'-y+1/2,x,z+1/2',
-	'-y+1/4,x+3/4,z+1/4',
-	'-y,x-y,z',
-	'-y,x-y,z+1/3',
-	'-y,x-y,z+2/3',
-	'x+2/3,y+1/3,z+1/3',
-	'-y,-x,-z',
-	'y,x,-z',
-	'-y,-x,-z+2/3',
-	'-y,-x,-z+1/3',
-	'-y,-x,z',
-	'y,x,z',
-	'-y,-x,z+1/2',
-	'y,x,z+1/2',
-	'-y,-x,-z+1/2',
-	'y,x,-z+1/2',
 	'x,y,-z',
-	'y,x,-z+1/3',
-	'y,x,-z+2/3',
-	'x,y,-z+1/2',
+	'x,-y,z',
+	'x,-y,-z',
+	'-x,y,z',
+	'-x,y,-z',
+	'-x,-y,z',
+	'-x,-y,-z',
+	'x,z,y',
+	'x,z,-y',
+	'x,-z,y',
+	'x,-z,-y',
+	'-x,z,y',
+	'-x,z,-y',
+	'-x,-z,y',
+	'-x,-z,-y',
+	'y,x,z',
+	'y,x,-z',
+	'y,-x,z',
+	'y,-x,-z',
+	'-y,x,z',
+	'-y,x,-z',
+	'-y,-x,z',
+	'-y,-x,-z',
+	'y,z,x',
+	'y,z,-x',
+	'y,-z,x',
+	'y,-z,-x',
+	'-y,z,x',
+	'-y,z,-x',
+	'-y,-z,x',
+	'-y,-z,-x',
 	'z,x,y',
-	'y+1/2,x+1/2,-z+1/2',
-	'y+3/4,x+1/4,-z+3/4',
-	'y+1/4,x+3/4,-z+3/4',
-	'y+3/4,x+1/4,-z+1/4',
-	'y+1/2,x+1/2,z+1/2',
-	'y+1/4,x+1/4,z+1/4',
-	'y+1/2,x+1/2,-z',
-	'-x+3/4,-y+1/4,z+1/2',
-	'-x+1/4,y+1/2,-z+3/4',
-	'y+3/4,x+1/4,-z+1/2',
-	'-x+1/4,-y+3/4,z+1/2',
-	'-x+3/4,y+1/2,-z+1/4',
-	'y+3/4,x+1/4,-z',
+	'z,x,-y',
+	'z,-x,y',
+	'z,-x,-y',
+	'-z,x,y',
+	'-z,x,-y',
+	'-z,-x,y',
+	'-z,-x,-y',
+	'z,y,x',
+	'z,y,-x',
+	'z,-y,x',
+	'z,-y,-x',
+	'-z,y,x',
+	'-z,y,-x',
+	'-z,-y,x',
+	'-z,-y,-x',
+	'x,x-y,z',
+	'x,x-y,-z',
+	'-x,-x+y,z',
+	'-x,-x+y,-z',
+	'y,-x+y,z',
+	'y,-x+y,-z',
+	'-y,x-y,z',
+	'-y,x-y,-z',
+	'x-y,x,z',
+	'x-y,x,-z',
+	'x-y,-y,z',
+	'x-y,-y,-z',
+	'-x+y,y,z',
+	'-x+y,y,-z',
+	'-x+y,-x,z',
+	'-x+y,-x,-z',
 ]
 
 class SpaceGroupSymOps(PythonAlgorithm):
@@ -240,8 +221,10 @@ class SpaceGroupSymOps(PythonAlgorithm):
 												validator=FloatArrayLengthValidator(4)),
 			'Coordinates in the INPUT workspace that corresponds to (0,0,0) in the OUTPUT workspace')
 		self.declareProperty('Normalise Basis Vectors', True, 'Normalize the given basis vectors to unity')
-		self.declareProperty('BasisVector0', 'a,unit,1,1,0,0', StringMandatoryValidator(), 'Format: \'name,units,x,y,z\'')
-		self.declareProperty('BasisVector1', 'b,unit,0,0,1,0', StringMandatoryValidator(), 'Format: \'name,units,x,y,z\'')
+		self.declareProperty('BasisVector0', '', 'Format: \'name,units,x,y,z\'. Leave blank for None.')
+		self.declareProperty('BasisVector1', '', 'Format: \'name,units,x,y,z\'. Leave blank for None.')
+		self.declareProperty('BasisVector2', '', 'Format: \'name,units,x,y,z\'. Leave blank for None.')
+		self.declareProperty('BasisVector3', '', 'Format: \'name,units,x,y,z\'. Leave blank for None.')
 		self.declareProperty(WorkspaceProperty(name='Input Workspace',
 												defaultValue='',
 												direction=Direction.Input), 'An input MDWorkspace')
@@ -255,6 +238,8 @@ class SpaceGroupSymOps(PythonAlgorithm):
 		self.setPropertySettings('Normalise Basis Vectors', EnabledWhenProperty('Axis Aligned',PropertyCriterion.IsDefault))
 		self.setPropertySettings('BasisVector0', VisibleWhenProperty('Axis Aligned', PropertyCriterion.IsDefault))
 		self.setPropertySettings('BasisVector1', VisibleWhenProperty('Axis Aligned', PropertyCriterion.IsDefault))
+		self.setPropertySettings('BasisVector2', VisibleWhenProperty('Axis Aligned', PropertyCriterion.IsDefault))
+		self.setPropertySettings('BasisVector3', VisibleWhenProperty('Axis Aligned', PropertyCriterion.IsDefault))
 
 		align_grp = 'Axis-Aligned Binning'
 		self.setPropertyGroup('Axis Aligned', align_grp)
@@ -262,12 +247,14 @@ class SpaceGroupSymOps(PythonAlgorithm):
 		self.setPropertyGroup('AlignedDim1', align_grp)
 
 		nonalign_grp = 'Non Axis-Aligned Binning'
+		self.setPropertyGroup('Output Bins', nonalign_grp)
+		self.setPropertyGroup('Output Extents', nonalign_grp)
+		self.setPropertyGroup('Translation', nonalign_grp)
+		self.setPropertyGroup('Normalise Basis Vectors', nonalign_grp)
 		self.setPropertyGroup('BasisVector0', nonalign_grp)
 		self.setPropertyGroup('BasisVector1', nonalign_grp)
-		self.setPropertyGroup('Normalise Basis Vectors', nonalign_grp)
-		self.setPropertyGroup('Output Extents', nonalign_grp)
-		self.setPropertyGroup('Output Bins', nonalign_grp)
-		self.setPropertyGroup('Translation', nonalign_grp)
+		self.setPropertyGroup('BasisVector2', nonalign_grp)
+		self.setPropertyGroup('BasisVector3', nonalign_grp)
 
 		# ------------------------- Output properties ------------------------
 		self.declareProperty(WorkspaceProperty(name='Binned Workspace',
@@ -281,6 +268,8 @@ class SpaceGroupSymOps(PythonAlgorithm):
 		Adim1 = self.getProperty('AlignedDim1').value
 		basis0 = self.getProperty('BasisVector0').value
 		basis1 = self.getProperty('BasisVector1').value
+		basis2 = self.getProperty('BasisVector2').value
+		basis3 = self.getProperty('BasisVector3').value
 		axisAligned = self.getProperty('Axis Aligned').value
 		normalizeBasisVectors = self.getProperty('Normalise Basis Vectors').value
 		outputExtents = self.getProperty('Output Extents').value
