@@ -1,5 +1,6 @@
 import io
-
+from mantid.geometry import SpaceGroupFactory
+from mantid.geometry import PointGroupFactory
 
 def unique_symops():
 	f = open("symops_from_bilbao.txt", "r")
@@ -42,10 +43,29 @@ def format():
 	f = open("SymmetryList.txt", "r")
 	for line in f:
 		line = line.rstrip("\n")
-		print '\'' + line + '\','
+		print "'" + line + "',"
 	f.close()
+
+
+def check_registered_sg():
+	pg = PointGroupFactory.getAllPointGroupSymbols()
+	for item in pg:
+		print "'" + item + "',"
+
+
+def sg_test():
+	hmsymbol = str(SpaceGroupFactory.subscribedSpaceGroupSymbols(198))[2:-2] #Eliminate quotes and brackets
+	sg = SpaceGroupFactory.createSpaceGroup(hmsymbol) 
+	pg = PointGroupFactory.createPointGroupFromSpaceGroup(sg)
+	SymOps = pg.getSymmetryOperations()
+
+	for j, op in enumerate(SymOps):
+	    coordinatesPrime = op.transformCoordinates(coordinates)
+	    print coordinatesPrime
+
 
 #extract_from_dump()
 #unique_symops()
 #compare_symops()
-format()
+#format()
+#check_registered_sg()
