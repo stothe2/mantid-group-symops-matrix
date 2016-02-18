@@ -288,9 +288,9 @@ class SpaceGroupSymOps(PythonAlgorithm):
 
 		# Change value of empty basis vectors to None to follow BinMD argument rules
 		if len(basis0) is 0:
-			log.fatal("Error: At least two basis vectors needs to be defined. Cannot bin!")
+			log.fatal("Error: At least two basis vectors need to be defined. Cannot bin!")
 		if len(basis1) is 0:
-			log.fatal("Error: At least two basis vectors needs to be defined. Cannot bin!")
+			log.fatal("Error: At least two basis vectors need to be defined. Cannot bin!")
 		if len(basis2) is 0:
 			basis2 = None
 		if len(basis3) is 0:
