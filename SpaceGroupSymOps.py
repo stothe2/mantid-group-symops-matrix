@@ -172,6 +172,8 @@ symList = ['x,y,z',
 
 class SpaceGroupSymOps(PythonAlgorithm):
 
+	_binned_ws = None
+
 	def PyInit(self):
 		# ------------------------- Input properties -------------------------
 
@@ -286,7 +288,7 @@ class SpaceGroupSymOps(PythonAlgorithm):
 		# Create a logger to store all errors and other information related to this particular algorithm
 		log = Logger("SpaceGroupSymOps_log")
 
-		# Change value of empty basis vectors to None to follow BinMD argument rules
+		# Change value of empty basis vectors to None
 		if len(basis0) is 0:
 			log.fatal("Error: At least two basis vectors need to be defined. Cannot bin!")
 		if len(basis1) is 0:
@@ -306,22 +308,22 @@ class SpaceGroupSymOps(PythonAlgorithm):
 			outputExtents = [float(extent0[0]),float(extent0[1]),float(extent1[0]),float(extent1[1])]
 			outputBins = [int(bins0),int(bins1)]
 
-		binned_ws = BinMD(InputWorkspace=mdws, AxisAligned=False,
+		self._binned_ws = BinMD(InputWorkspace=mdws, AxisAligned=False,
 			BasisVector0=basis0, BasisVector1=basis1,
 			BasisVector2=basis2, BasisVector3=basis3,
 			NormalizeBasisVectors=normalizeBasisVectors, Translation=translation,
 			OutputExtents=outputExtents, OutputBins=outputBins)
 		
 		if symChoice == "Symmetry Operations":
-			binned_ws = self._symmetrize_by_generators(mdws, False, basis0, basis1, basis2, basis3,
-				normalizeBasisVectors, translation, outputExtents, outputBins, binned_ws,
+			self._symmetrize_by_generators(mdws, False, basis0, basis1, basis2, basis3,
+				normalizeBasisVectors, translation, outputExtents, outputBins,
 				int(numOp), symOp1, symOp2, symOp3, symOp4, symOp5)
 		else:
-			binned_ws = self._symmetrize_by_sg(mdws, False, basis0, basis1, basis2, basis3,
-				normalizeBasisVectors, translation, outputExtents, outputBins, binned_ws,
+			self._symmetrize_by_sg(mdws, False, basis0, basis1, basis2, basis3,
+				normalizeBasisVectors, translation, outputExtents, outputBins,
 				sgNumber)
 		
-		self.setProperty("Binned Workspace", binned_ws)
+		self.setProperty("Binned Workspace", self._binned_ws)
 
 
 	def category(self):
@@ -329,7 +331,7 @@ class SpaceGroupSymOps(PythonAlgorithm):
 
 
 	def _symmetrize_by_sg(self, mdws, axisAligned, basis0, basis1, basis2, basis3,
-		normalizeBasisVectors, translation, outputExtents, outputBins, binned_ws,
+		normalizeBasisVectors, translation, outputExtents, outputBins,
 		sgNumber):
 
 		unit0, basisVec0 = self._destringify(basis0)
@@ -362,17 +364,17 @@ class SpaceGroupSymOps(PythonAlgorithm):
 	
 			newTranslation = translation + dict_t[sgNumber][index]
 
-			binned_ws += BinMD(InputWorkspace=mdws, AxisAligned=axisAligned,
+			self._binned_ws += BinMD(InputWorkspace=mdws, AxisAligned=axisAligned,
 				BasisVector0=basisVec0_str, BasisVector1=basisVec1_str,
 				BasisVector2=basisVec2_str, BasisVector3=basisVec3_str,
 				NormalizeBasisVectors=normalizeBasisVectors, Translation=newTranslation,
 				OutputExtents=outputExtents, OutputBins=outputBins)
 		
-		return binned_ws
+		return
 
 
 	def _symmetrize_by_generators(self, mdws, axisAligned, basis0, basis1, basis2, basis3,
-		normalizeBasisVectors, translation, outputExtents, outputBins, binned_ws,
+		normalizeBasisVectors, translation, outputExtents, outputBins,
 		numOp, symOp1, symOp2, symOp3, symOp4, symOp5):
 		
 		unit0, basisVec0 = self._destringify(basis0)
@@ -411,13 +413,13 @@ class SpaceGroupSymOps(PythonAlgorithm):
 			# Factor in for the original translation reading
 			newTranslation += translation
 
-			binned_ws += BinMD(InputWorkspace=mdws, AxisAligned=axisAligned,
+			self._binned_ws += BinMD(InputWorkspace=mdws, AxisAligned=axisAligned,
 				BasisVector0=basisVec0_str, BasisVector1=basisVec1_str,
 				BasisVector2=basisVec2_str, BasisVector3=basisVec3_str,
 				NormalizeBasisVectors=normalizeBasisVectors, Translation=newTranslation,
 				OutputExtents=outputExtents, OutputBins=outputBins)
 
-		return binned_ws
+		return
 
 
 	def _destringify(self, basis):
