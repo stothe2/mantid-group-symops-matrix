@@ -2,83 +2,76 @@ from mantid.kernel import *
 from mantid.api import *
 from mantid.geometry import SymmetryOperationFactory
 
-from collections import defaultdict
 from numpy import array
-from numpy import dot
-import re
-
-
-# Symmetry operation list
-symList = ['x,y,z',
-	'x,y,-z',
-	'x,-y,z',
-	'x,-y,-z',
-	'-x,y,z',
-	'-x,y,-z',
-	'-x,-y,z',
-	'-x,-y,-z',
-	'x,z,y',
-	'x,z,-y',
-	'x,-z,y',
-	'x,-z,-y',
-	'-x,z,y',
-	'-x,z,-y',
-	'-x,-z,y',
-	'-x,-z,-y',
-	'y,x,z',
-	'y,x,-z',
-	'y,-x,z',
-	'y,-x,-z',
-	'-y,x,z',
-	'-y,x,-z',
-	'-y,-x,z',
-	'-y,-x,-z',
-	'y,z,x',
-	'y,z,-x',
-	'y,-z,x',
-	'y,-z,-x',
-	'-y,z,x',
-	'-y,z,-x',
-	'-y,-z,x',
-	'-y,-z,-x',
-	'z,x,y',
-	'z,x,-y',
-	'z,-x,y',
-	'z,-x,-y',
-	'-z,x,y',
-	'-z,x,-y',
-	'-z,-x,y',
-	'-z,-x,-y',
-	'z,y,x',
-	'z,y,-x',
-	'z,-y,x',
-	'z,-y,-x',
-	'-z,y,x',
-	'-z,y,-x',
-	'-z,-y,x',
-	'-z,-y,-x',
-	'x,x-y,z',
-	'x,x-y,-z',
-	'-x,-x+y,z',
-	'-x,-x+y,-z',
-	'y,-x+y,z',
-	'y,-x+y,-z',
-	'-y,x-y,z',
-	'-y,x-y,-z',
-	'x-y,x,z',
-	'x-y,x,-z',
-	'x-y,-y,z',
-	'x-y,-y,-z',
-	'-x+y,y,z',
-	'-x+y,y,-z',
-	'-x+y,-x,z',
-	'-x+y,-x,-z',
-]
 
 
 class SpaceGroupSymOps(PythonAlgorithm):
 
-	_binned_ws = None
+	_binned_ws = None # Output workspace
+	symList = ['x,y,z', # Symmetry operation list
+		'x,y,-z',
+		'x,-y,z',
+		'x,-y,-z',
+		'-x,y,z',
+		'-x,y,-z',
+		'-x,-y,z',
+		'-x,-y,-z',
+		'x,z,y',
+		'x,z,-y',
+		'x,-z,y',
+		'x,-z,-y',
+		'-x,z,y',
+		'-x,z,-y',
+		'-x,-z,y',
+		'-x,-z,-y',
+		'y,x,z',
+		'y,x,-z',
+		'y,-x,z',
+		'y,-x,-z',
+		'-y,x,z',
+		'-y,x,-z',
+		'-y,-x,z',
+		'-y,-x,-z',
+		'y,z,x',
+		'y,z,-x',
+		'y,-z,x',
+		'y,-z,-x',
+		'-y,z,x',
+		'-y,z,-x',
+		'-y,-z,x',
+		'-y,-z,-x',
+		'z,x,y',
+		'z,x,-y',
+		'z,-x,y',
+		'z,-x,-y',
+		'-z,x,y',
+		'-z,x,-y',
+		'-z,-x,y',
+		'-z,-x,-y',
+		'z,y,x',
+		'z,y,-x',
+		'z,-y,x',
+		'z,-y,-x',
+		'-z,y,x',
+		'-z,y,-x',
+		'-z,-y,x',
+		'-z,-y,-x',
+		'x,x-y,z',
+		'x,x-y,-z',
+		'-x,-x+y,z',
+		'-x,-x+y,-z',
+		'y,-x+y,z',
+		'y,-x+y,-z',
+		'-y,x-y,z',
+		'-y,x-y,-z',
+		'x-y,x,z',
+		'x-y,x,-z',
+		'x-y,-y,z',
+		'x-y,-y,-z',
+		'-x+y,y,z',
+		'-x+y,y,-z',
+		'-x+y,-x,z',
+		'-x+y,-x,-z']
 
 	def PyInit(self):
 		# ------------------------- Input properties -------------------------
@@ -88,11 +81,11 @@ class SpaceGroupSymOps(PythonAlgorithm):
 		self.declareProperty('Space Group', 198, IntBoundedValidator(lower=1, upper=230),
 			doc='Space group number as given in International Tables for Crystallography, Vol. A')
 		self.declareProperty('Number of symmetry operations', '1', validator=StringListValidator(['1', '2', '3', '4', '5']))
-		self.declareProperty('Symmetry operation 1', 'x,y,z', validator=StringListValidator(symList))
-		self.declareProperty('Symmetry operation 2', 'x,y,z', validator=StringListValidator(symList))
-		self.declareProperty('Symmetry operation 3', 'x,y,z', validator=StringListValidator(symList))
-		self.declareProperty('Symmetry operation 4', 'x,y,z', validator=StringListValidator(symList))
-		self.declareProperty('Symmetry operation 5', 'x,y,z', validator=StringListValidator(symList))
+		self.declareProperty('Symmetry operation 1', 'x,y,z', validator=StringListValidator(self.symList))
+		self.declareProperty('Symmetry operation 2', 'x,y,z', validator=StringListValidator(self.symList))
+		self.declareProperty('Symmetry operation 3', 'x,y,z', validator=StringListValidator(self.symList))
+		self.declareProperty('Symmetry operation 4', 'x,y,z', validator=StringListValidator(self.symList))
+		self.declareProperty('Symmetry operation 5', 'x,y,z', validator=StringListValidator(self.symList))
 
 		self.setPropertySettings('Space Group', VisibleWhenProperty('Symmetrization by', PropertyCriterion.IsEqualTo, 'Space Group'))
 		self.setPropertySettings('Number of symmetry operations', VisibleWhenProperty('Symmetrization by', PropertyCriterion.IsEqualTo, 'Symmetry Operations'))
@@ -116,11 +109,9 @@ class SpaceGroupSymOps(PythonAlgorithm):
 		self.declareProperty('Axis Aligned', False, 'Perform binning aligned with the axes of the input MDEventWorkspace?')
 		self.declareProperty('AlignedDim0', 'h,-3,3,1', StringMandatoryValidator(), 'Format: \'name,limits,bins\'')
 		self.declareProperty('AlignedDim1', 'k,-3,3,1', StringMandatoryValidator(), 'Format: \'name,limits,bins\'')
-		self.declareProperty(FloatArrayProperty(name='Output Bins',
-												values=[50,50]),
+		self.declareProperty(FloatArrayProperty(name='Output Bins', values=[]),
 			'The number of bins for each dimension of the OUTPUT workspace')
-		self.declareProperty(FloatArrayProperty(name='Output Extents',
-												values=[-5,8,-5,8]),
+		self.declareProperty(FloatArrayProperty(name='Output Extents', values=[]),
 			'The minimum, maximum edges of space of each dimension of the OUTPUT workspace, as a comma-separated list')
 		self.declareProperty(FloatArrayProperty(name='Translation',
 												values=[0,0,0,0],
@@ -194,9 +185,8 @@ class SpaceGroupSymOps(PythonAlgorithm):
 
 		# Change value of empty basis vectors to None
 		if len(basis0) is 0:
-			log.fatal("Error: At least two basis vectors need to be defined. Cannot bin!")
+			log.fatal("Error: At least one basis vector needs to be defined. Cannot bin!")
 		if len(basis1) is 0:
-			#log.fatal("Error: At least two basis vectors need to be defined. Cannot bin!")
 			basis1 = None
 		if len(basis2) is 0:
 			basis2 = None
@@ -335,6 +325,7 @@ class SpaceGroupSymOps(PythonAlgorithm):
 			return None, None
 
 		temp = basis.split(',')
+		
 		unit = temp[0:2]
 		temp = temp[2:-1]
 		return unit, array([int(temp[0]), int(temp[1]), int(temp[2])])
