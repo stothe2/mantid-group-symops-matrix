@@ -2,76 +2,86 @@ from mantid.kernel import *
 from mantid.api import *
 from mantid.geometry import SymmetryOperationFactory
 
+from collections import defaultdict
 from numpy import array
+from numpy import dot
+from numpy import zeros
+from numpy import matrix
+from numpy import array_equal
+import re
+
+
+# Symmetry operation list
+symList = ['x,y,z',
+	'x,y,-z',
+	'x,-y,z',
+	'x,-y,-z',
+	'-x,y,z',
+	'-x,y,-z',
+	'-x,-y,z',
+	'-x,-y,-z',
+	'x,z,y',
+	'x,z,-y',
+	'x,-z,y',
+	'x,-z,-y',
+	'-x,z,y',
+	'-x,z,-y',
+	'-x,-z,y',
+	'-x,-z,-y',
+	'y,x,z',
+	'y,x,-z',
+	'y,-x,z',
+	'y,-x,-z',
+	'-y,x,z',
+	'-y,x,-z',
+	'-y,-x,z',
+	'-y,-x,-z',
+	'y,z,x',
+	'y,z,-x',
+	'y,-z,x',
+	'y,-z,-x',
+	'-y,z,x',
+	'-y,z,-x',
+	'-y,-z,x',
+	'-y,-z,-x',
+	'z,x,y',
+	'z,x,-y',
+	'z,-x,y',
+	'z,-x,-y',
+	'-z,x,y',
+	'-z,x,-y',
+	'-z,-x,y',
+	'-z,-x,-y',
+	'z,y,x',
+	'z,y,-x',
+	'z,-y,x',
+	'z,-y,-x',
+	'-z,y,x',
+	'-z,y,-x',
+	'-z,-y,x',
+	'-z,-y,-x',
+	'x,x-y,z',
+	'x,x-y,-z',
+	'-x,-x+y,z',
+	'-x,-x+y,-z',
+	'y,-x+y,z',
+	'y,-x+y,-z',
+	'-y,x-y,z',
+	'-y,x-y,-z',
+	'x-y,x,z',
+	'x-y,x,-z',
+	'x-y,-y,z',
+	'x-y,-y,-z',
+	'-x+y,y,z',
+	'-x+y,y,-z',
+	'-x+y,-x,z',
+	'-x+y,-x,-z',
+]
 
 
 class SpaceGroupSymOps(PythonAlgorithm):
 
-	_binned_ws = None # Output workspace
-	symList = ['x,y,z', # Symmetry operation list
-		'x,y,-z',
-		'x,-y,z',
-		'x,-y,-z',
-		'-x,y,z',
-		'-x,y,-z',
-		'-x,-y,z',
-		'-x,-y,-z',
-		'x,z,y',
-		'x,z,-y',
-		'x,-z,y',
-		'x,-z,-y',
-		'-x,z,y',
-		'-x,z,-y',
-		'-x,-z,y',
-		'-x,-z,-y',
-		'y,x,z',
-		'y,x,-z',
-		'y,-x,z',
-		'y,-x,-z',
-		'-y,x,z',
-		'-y,x,-z',
-		'-y,-x,z',
-		'-y,-x,-z',
-		'y,z,x',
-		'y,z,-x',
-		'y,-z,x',
-		'y,-z,-x',
-		'-y,z,x',
-		'-y,z,-x',
-		'-y,-z,x',
-		'-y,-z,-x',
-		'z,x,y',
-		'z,x,-y',
-		'z,-x,y',
-		'z,-x,-y',
-		'-z,x,y',
-		'-z,x,-y',
-		'-z,-x,y',
-		'-z,-x,-y',
-		'z,y,x',
-		'z,y,-x',
-		'z,-y,x',
-		'z,-y,-x',
-		'-z,y,x',
-		'-z,y,-x',
-		'-z,-y,x',
-		'-z,-y,-x',
-		'x,x-y,z',
-		'x,x-y,-z',
-		'-x,-x+y,z',
-		'-x,-x+y,-z',
-		'y,-x+y,z',
-		'y,-x+y,-z',
-		'-y,x-y,z',
-		'-y,x-y,-z',
-		'x-y,x,z',
-		'x-y,x,-z',
-		'x-y,-y,z',
-		'x-y,-y,-z',
-		'-x+y,y,z',
-		'-x+y,y,-z',
-		'-x+y,-x,z',
-		'-x+y,-x,-z']
+	_binned_ws = None
 
 	def PyInit(self):
 		# ------------------------- Input properties -------------------------
@@ -81,11 +91,11 @@ class SpaceGroupSymOps(PythonAlgorithm):
 		self.declareProperty('Space Group', 198, IntBoundedValidator(lower=1, upper=230),
 			doc='Space group number as given in International Tables for Crystallography, Vol. A')
 		self.declareProperty('Number of symmetry operations', '1', validator=StringListValidator(['1', '2', '3', '4', '5']))
-		self.declareProperty('Symmetry operation 1', 'x,y,z', validator=StringListValidator(self.symList))
-		self.declareProperty('Symmetry operation 2', 'x,y,z', validator=StringListValidator(self.symList))
-		self.declareProperty('Symmetry operation 3', 'x,y,z', validator=StringListValidator(self.symList))
-		self.declareProperty('Symmetry operation 4', 'x,y,z', validator=StringListValidator(self.symList))
-		self.declareProperty('Symmetry operation 5', 'x,y,z', validator=StringListValidator(self.symList))
+		self.declareProperty('Symmetry operation 1', 'x,y,z', validator=StringListValidator(symList))
+		self.declareProperty('Symmetry operation 2', 'x,y,z', validator=StringListValidator(symList))
+		self.declareProperty('Symmetry operation 3', 'x,y,z', validator=StringListValidator(symList))
+		self.declareProperty('Symmetry operation 4', 'x,y,z', validator=StringListValidator(symList))
+		self.declareProperty('Symmetry operation 5', 'x,y,z', validator=StringListValidator(symList))
 
 		self.setPropertySettings('Space Group', VisibleWhenProperty('Symmetrization by', PropertyCriterion.IsEqualTo, 'Space Group'))
 		self.setPropertySettings('Number of symmetry operations', VisibleWhenProperty('Symmetrization by', PropertyCriterion.IsEqualTo, 'Symmetry Operations'))
@@ -109,9 +119,11 @@ class SpaceGroupSymOps(PythonAlgorithm):
 		self.declareProperty('Axis Aligned', False, 'Perform binning aligned with the axes of the input MDEventWorkspace?')
 		self.declareProperty('AlignedDim0', 'h,-3,3,1', StringMandatoryValidator(), 'Format: \'name,limits,bins\'')
 		self.declareProperty('AlignedDim1', 'k,-3,3,1', StringMandatoryValidator(), 'Format: \'name,limits,bins\'')
-		self.declareProperty(FloatArrayProperty(name='Output Bins', values=[]),
+		self.declareProperty(FloatArrayProperty(name='Output Bins',
+												values=[50,50]),
 			'The number of bins for each dimension of the OUTPUT workspace')
-		self.declareProperty(FloatArrayProperty(name='Output Extents', values=[]),
+		self.declareProperty(FloatArrayProperty(name='Output Extents',
+												values=[-5,8,-5,8]),
 			'The minimum, maximum edges of space of each dimension of the OUTPUT workspace, as a comma-separated list')
 		self.declareProperty(FloatArrayProperty(name='Translation',
 												values=[0,0,0,0],
@@ -185,8 +197,9 @@ class SpaceGroupSymOps(PythonAlgorithm):
 
 		# Change value of empty basis vectors to None
 		if len(basis0) is 0:
-			log.fatal("Error: At least one basis vector needs to be defined. Cannot bin!")
+			log.fatal("Error: At least two basis vectors need to be defined. Cannot bin!")
 		if len(basis1) is 0:
+			#log.fatal("Error: At least two basis vectors need to be defined. Cannot bin!")
 			basis1 = None
 		if len(basis2) is 0:
 			basis2 = None
@@ -239,30 +252,52 @@ class SpaceGroupSymOps(PythonAlgorithm):
 		unit2, basisVec2 = self._destringify(basis2)
 		unit3, basisVec3 = self._destringify(basis3)
 
-		for item in symOps:
+		numbv = 0
+		if basisVec0 is not None:
+			BV0prime = self.EquivalentCoordinates(basisVec0,pg,sg)
+			numbv +=1
+		if basisVec1 is not None:
+			BV1prime = self.EquivalentCoordinates(basisVec1,pg,sg)
+			numbv +=1
+		if basisVec2 is not None:
+			BV2prime = self.EquivalentCoordinates(basisVec2,pg,sg)
+			numbv +=1
+		if basisVec3 is not None:
+			BV3prime = self.EquivalentCoordinates(basisVec3,pg,sg)
+			numbv +=1
+
+		# Make the arrays of basis vectors into a single 3D array
+		if numbv == 4:
+			BVprime = array([BV0prime,BV1prime,BV2prime,BV3prime]).transpose(1,0,2)
+		elif numbv == 3:
+			BVprime = array([BV0prime,BV1prime,BV2prime]).transpose(1,0,2)
+		elif numbv == 2:
+			BVprime = array([BV0prime,BV1prime]).transpose(1,0,2)
+		elif numbv == 1:
+			BVprime = array([BV0prime]).transpose(1,0,2)
+
+		# Find the unique sets of basis vectors
+		UniqueBasisVecs = self.uniqueBVs(BVprime)
+
+		for BVset in UniqueBasisVecs:
 			basisVec0_str = None
 			basisVec1_str = None
 			basisVec2_str = None
 			basisVec3_str = None
 
 			if basisVec0 is not None:
-				coordinatesPrime = item.transformCoordinates(basisVec0)
-				basisVec0_str = unit0[0] + ',' + unit0[1] + ',' + str(coordinatesPrime.getX()) \
-							+ ',' + str(coordinatesPrime.getY()) + ',' + str(coordinatesPrime.getZ()) + ',' + '0'
+				basisVec0_str = unit0[0] + ',' + unit0[1] + ',' + str(BVset[0,0]) \
+					+ ',' + str(BVset[0,1]) + ',' + str(BVset[0,2]) + ',' + '0'
 			if basisVec1 is not None:
-				coordinatesPrime = item.transformCoordinates(basisVec1)
-				basisVec1_str = unit1[0] + ',' + unit1[1] + ',' + str(coordinatesPrime.getX()) \
-							+ ',' + str(coordinatesPrime.getY()) + ',' + str(coordinatesPrime.getZ()) + ',' + '0'
+				basisVec1_str = unit1[0] + ',' + unit1[1] + ',' + str(BVset[1,0]) \
+					+ ',' + str(BVset[1,1]) + ',' + str(BVset[1,2]) + ',' + '0'
 			if basisVec2 is not None:
-				coordinatesPrime = item.transformCoordinates(basisVec2)
-				basisVec2_str = unit2[0] + ',' + unit2[1] + ',' + str(coordinatesPrime.getX()) \
-							+ ',' + str(coordinatesPrime.getY()) + ',' + str(coordinatesPrime.getZ()) + ',' + '0'
+				basisVec2_str = unit2[0] + ',' + unit2[1] + ',' + str(BVset[2,0]) \
+					+ ',' + str(BVset[2,1]) + ',' + str(BVset[2,2]) + ',' + '0'
 			if basisVec3 is not None:
-				coordinatesPrime = item.transformCoordinates(basisVec3)
-				basisVec3_str = unit3[0] + ',' + unit3[1] + ',' + str(coordinatesPrime.getX()) \
-							+ ',' + str(coordinatesPrime.getY()) + ',' + str(coordinatesPrime.getZ()) + ',' + '0'
+				basisVec3_str = unit3[0] + ',' + unit3[1] + ',' + str(BVset[3,0]) \
+					+ ',' + str(BVset[3,1]) + ',' + str(BVset[3,2]) + ',' + '0'
 
-			print item
 			print basisVec0_str
 			print basisVec1_str
 
@@ -274,6 +309,45 @@ class SpaceGroupSymOps(PythonAlgorithm):
 		
 		return
 
+	def EquivalentCoordinates(self,basis,pntgrp,spcgrp):
+		"""Generates a list of all equivalent coordinates for a given space group.
+		Note that the program assumes that the hkl axes are orthogonal, even if the
+		space group is actually triangular or hexagonal"""
+		symOps = pntgrp.getSymmetryOperations()
+
+		sgnum = spcgrp.getNumber()
+		if sgnum >= 143 and sgnum <= 194:
+			print "Triangular/Hexagonal hkl transform"
+			CoordTransform = array([[1, -1/(3**0.5), 0], [0, 2/(3**0.5), 0], [0, 0, 1]])
+			CoordTransformInverse = array([[1,0.5, 0], [0, (3**0.5)/2, 0], [0, 0, 1]])
+		else:
+			CoordTransform = array([[1,0, 0], [0, 1, 0], [0, 0, 1]])
+			CoordTransformInverse = array([[1,0, 0], [0, 1, 0], [0, 0, 1]])
+
+		# Transform coordinates to non-orthogonal hkl space
+		basisprime = dot(CoordTransform, array(basis))
+		basisprime = basisprime.tolist()
+
+		EquivCoords = zeros((len(symOps),3)) 
+		i = 0
+		for item in symOps:
+			#Generate symmetry-equivalent coordinates
+			coordinatesPrime = item.transformHKL(basisprime)
+			EquivCoords[i,0] = coordinatesPrime.X()
+			EquivCoords[i,1] = coordinatesPrime.Y()
+			EquivCoords[i,2] = coordinatesPrime.Z()
+			# Transform back into orthogonal hkl space
+			EquivCoords[i] = dot(CoordTransformInverse, EquivCoords[i])
+			i+=1
+		return EquivCoords
+
+	def uniqueBVs(self, BVs):
+		"""Returns the uniqe sets of basis vectors as a single array"""
+		UniqueBV = []
+		for bv in BVs:
+			if not any(array_equal(bv, unique_bv) for unique_bv in UniqueBV):
+				UniqueBV.append(bv)
+		return UniqueBV
 
 	def _symmetrize_by_generators(self, mdws, axisAligned, basis0, basis1, basis2, basis3,
 		normalizeBasisVectors, translation, outputExtents, outputBins,
@@ -325,7 +399,6 @@ class SpaceGroupSymOps(PythonAlgorithm):
 			return None, None
 
 		temp = basis.split(',')
-		
 		unit = temp[0:2]
 		temp = temp[2:-1]
 		return unit, array([int(temp[0]), int(temp[1]), int(temp[2])])
