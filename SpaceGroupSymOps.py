@@ -5,185 +5,79 @@ from mantid.geometry import SymmetryOperationFactory
 from collections import defaultdict
 from numpy import array
 from numpy import dot
-from math import modf # to split number into int and decimal parts
+from numpy import zeros
+from numpy import matrix
+from numpy import array_equal
+import re
 
-# Space group matrices without translation column
-sg = [	(1, array([[1, 0, 0], [0, 1, 0], [0, 0, 1]])), # Triclinic
-		(2, array([[-1, 0, 0], [0, -1, 0], [0, 0, -1]])),
-		(3, array([[-1, 0, 0], [0, 1, 0], [0, 0, -1]])), # Monoclinic
-		(4, array([[-1, 0, 0], [0, 1, 0], [0, 0, -1]])),
-		(5, array([[-1, 0, 0], [0, 1, 0], [0, 0, -1]])),
-		(6, array([[1, 0, 0], [0, -1, 0], [0, 0, 1]])),
-		(7, array([[1, 0, 0], [0, -1, 0], [0, 0, 1]])),
-		(8, array([[1, 0, 0], [0, -1, 0], [0, 0, 1]])),
-		(9, array([[1, 0, 0], [0, -1, 0], [0, 0, 1]])),
-		(10, array([[-1, 0, 0], [0, 1, 0], [0, 0, -1]])),
-		(10, array([[-1, 0, 0], [0, -1, 0], [0, 0, -1]])),
-		(11, array([[-1, 0, 0], [0, 1, 0], [0, 0, -1]])),
-		(11, array([[-1, 0, 0], [0, -1, 0], [0, 0, -1]])),
-		(12, array([[-1, 0, 0], [0, 1, 0], [0, 0, -1]])),
-		(12, array([[-1, 0, 0], [0, -1, 0], [0, 0, -1]])),
-		(13, array([[-1, 0, 0], [0, 1, 0], [0, 0, -1]])),
-		(13, array([[-1, 0, 0], [0, -1, 0], [0, 0, -1]])),
-		(14, array([[-1, 0, 0], [0, 1, 0], [0, 0, -1]])),
-		(14, array([[-1, 0, 0], [0, -1, 0], [0, 0, -1]])),
-		(15, array([[-1, 0, 0], [0, 1, 0], [0, 0, -1]])),
-		(15, array([[-1, 0, 0], [0, -1, 0], [0, 0, -1]])),
-		(16, array([[-1, 0, 0], [0, 1, 0], [0, 0, -1]])), # Orthorhombic
-		(16, array([[1, 0, 0], [0, -1, 0], [0, 0, -1]])),
-		(17, array([[-1, 0, 0], [0, -1, 0], [0, 0, 1]])),
-		(17, array([[-1, 0, 0], [0, 1, 0], [0, 0, -1]])),
-		(18, array([[-1, 0, 0], [0, -1, 0], [0, 0, 1]])),
-		(18, array([[-1, 0, 0], [0, 1, 0], [0, 0, -1]])),
-		(19, array([[-1, 0, 0], [0, -1, 0], [0, 0, 1]])),
-		(19, array([[-1, 0, 0], [0, 1, 0], [0, 0, -1]])),
-		(20, array([[-1, 0, 0], [0, -1, 0], [0, 0, 1]])),
-		(20, array([[-1, 0, 0], [0, 1, 0], [0, 0, -1]])),
-		(21, array([[-1, 0, 0], [0, -1, 0], [0, 0, 1]])),
-		(21, array([[-1, 0, 0], [0, 1, 0], [0, 0, -1]])),
-		(22, array([[-1, 0, 0], [0, -1, 0], [0, 0, 1]])),
-		(22, array([[-1, 0, 0], [0, 1, 0], [0, 0, -1]])),
-		(23, array([[-1, 0, 0], [0, -1, 0], [0, 0, 1]])),
-		(23, array([[-1, 0, 0], [0, 1, 0], [0, 0, -1]])),
-		(198, array([[-1, 0, 0], [0, -1, 0], [0, 0, 1]])),
-		(198, array([[-1, 0, 0], [0, 1, 0], [0, 0, -1]])),
-		(198, array([[0, 0, 1], [1, 0, 0], [0, 1, 0]]))]
-dict_sg = defaultdict(list)
-for k, v in sg:
-	dict_sg[k].append(v)
-
-# Translation vectors
-t = [	(1, array([0,0,0,0])), # Triclinic
-		(2, array([0,0,0,0])),
-		(3, array([0,0,0,0])), # Monoclinic
-		(4, array([0,0.5,0,0])),
-		(5, array([0,0,0,0])),
-		(6, array([0,0,0,0])),
-		(7, array([0,0,0.5,0])),
-		(8, array([0,0,0,0])),
-		(9, array([0,0,0.5,0])),
-		(10, array([0,0,0,0])),
-		(10, array([0,0,0,0])),
-		(11, array([0,0.5,0,0])),
-		(11, array([0,0,0,0])),
-		(12, array([0,0,0,0])),
-		(12, array([0,0,0,0])),
-		(13, array([0,0,0.5,0])),
-		(13, array([0,0,0,0])),
-		(14, array([0,0.5,0.5,0])),
-		(14, array([0,0,0,0])),
-		(15, array([0,0,0.5,0])),
-		(15, array([0,0,0,0])),
-		(16, array([0,0,0,0])), # Orthorhombic
-		(16, array([0,0,0,0])),
-		(17, array([0,0,0.5,0])),
-		(17, array([0,0,0.5,0])),
-		(18, array([0,0,0,0])),
-		(18, array([0.5,0.5,0,0])),
-		(19, array([0.5,0,0.5,0])),
-		(19, array([0,0.5,0.5,0])),
-		(20, array([0,0,0.5,0])),
-		(20, array([0,0,0.5,0])),
-		(21, array([0,0,0,0])),
-		(21, array([0,0,0,0])),
-		(22, array([0,0,0,0])),
-		(22, array([0,0,0,0])),
-		(23, array([0,0,0,0])),
-		(23, array([0,0,0,0])),
-		(198, array([0.5,0,0.5,0])),
-		(198, array([0,0.5,0.5,0])),
-		(198, array([0,0,0,0]))]
-dict_t = defaultdict(list)
-for k, v in t:
-	dict_t[k].append(v)
-
-# Symmetry operation list
-symList = ['x,y,z',
-	'-x,-y,-z',
-	'-x,y,-z',
-	'-x,y+1/2,-z',
-	'x+1/2,y+1/2,z',
-	'x,-y,z',
-	'x,-y,z+1/2',
-	'-x,y,-z+1/2',
-	'-x,y+1/2,-z+1/2',
-	'-x,-y,z',
-	'-x,-y,z+1/2',
-	'-x+1/2,y+1/2,-z',
-	'-x+1/2,-y,z+1/2',
-	'x,y+1/2,z+1/2',
-	'x+1/2,y,z+1/2',
-	'x+1/2,y+1/2,z+1/2',
-	'x+1/2,-y,z',
-	'x,-y+1/2,z+1/2',
-	'x+1/2,-y,z+1/2',
-	'x+1/2,-y+1/2,z',
-	'x+1/2,-y+1/2,z+1/2',
-	'x,-y+1/2,z',
-	'x+1/4,-y+1/4,z+1/4',
-	'-x+1/2,-y+1/2,z',
-	'-x+1/2,y,-z+1/2',
-	'-x+1/2,y,-z',
-	'-x+1/2,-y,z',
-	'-x+1/2,y+1/2,-z+1/2',
-	'-x+1/2,-y+1/2,z+1/2',
-	'-x,-y+1/2,z+1/2',
-	'-x,-y+1/2,z',
-	'-x+3/4,-y+3/4,z',
-	'-x+3/4,y,-z+3/4',
-	'-y,x,z',
-	'-y,x,z+1/4',
-	'-y,x,z+1/2',
-	'-y,x,z+3/4',
-	'-y,x+1/2,z+1/4',
-	'y,-x,-z',
-	'-y+1/2,x,z',
-	'-y,x+1/2,z+1/2',
-	'-y+3/4,x+1/4,z+1/4',
-	'-y+1/2,x+1/2,z',
-	'-y+1/2,x+1/2,z+1/4',
-	'-x+1/2,y+1/2,-z+1/4',
-	'-y+1/2,x+1/2,z+1/2',
-	'-y+1/2,x+1/2,z+3/4',
-	'-x+1/2,y+1/2,-z+3/4',
-	'-x+1/2,y,-z+3/4',
-	'-y+1/2,x,z+1/2',
-	'-y+1/4,x+3/4,z+1/4',
-	'-y,x-y,z',
-	'-y,x-y,z+1/3',
-	'-y,x-y,z+2/3',
-	'x+2/3,y+1/3,z+1/3',
-	'-y,-x,-z',
-	'y,x,-z',
-	'-y,-x,-z+2/3',
-	'-y,-x,-z+1/3',
-	'-y,-x,z',
-	'y,x,z',
-	'-y,-x,z+1/2',
-	'y,x,z+1/2',
-	'-y,-x,-z+1/2',
-	'y,x,-z+1/2',
-	'x,y,-z',
-	'y,x,-z+1/3',
-	'y,x,-z+2/3',
-	'x,y,-z+1/2',
-	'z,x,y',
-	'y+1/2,x+1/2,-z+1/2',
-	'y+3/4,x+1/4,-z+3/4',
-	'y+1/4,x+3/4,-z+3/4',
-	'y+3/4,x+1/4,-z+1/4',
-	'y+1/2,x+1/2,z+1/2',
-	'y+1/4,x+1/4,z+1/4',
-	'y+1/2,x+1/2,-z',
-	'-x+3/4,-y+1/4,z+1/2',
-	'-x+1/4,y+1/2,-z+3/4',
-	'y+3/4,x+1/4,-z+1/2',
-	'-x+1/4,-y+3/4,z+1/2',
-	'-x+3/4,y+1/2,-z+1/4',
-	'y+3/4,x+1/4,-z',
-]
 
 class SpaceGroupSymOps(PythonAlgorithm):
+
+	_binned_ws = None # Output workspace
+	symList = ['x,y,z', # Symmetry operation list
+		'x,y,-z',
+		'x,-y,z',
+		'x,-y,-z',
+		'-x,y,z',
+		'-x,y,-z',
+		'-x,-y,z',
+		'-x,-y,-z',
+		'x,z,y',
+		'x,z,-y',
+		'x,-z,y',
+		'x,-z,-y',
+		'-x,z,y',
+		'-x,z,-y',
+		'-x,-z,y',
+		'-x,-z,-y',
+		'y,x,z',
+		'y,x,-z',
+		'y,-x,z',
+		'y,-x,-z',
+		'-y,x,z',
+		'-y,x,-z',
+		'-y,-x,z',
+		'-y,-x,-z',
+		'y,z,x',
+		'y,z,-x',
+		'y,-z,x',
+		'y,-z,-x',
+		'-y,z,x',
+		'-y,z,-x',
+		'-y,-z,x',
+		'-y,-z,-x',
+		'z,x,y',
+		'z,x,-y',
+		'z,-x,y',
+		'z,-x,-y',
+		'-z,x,y',
+		'-z,x,-y',
+		'-z,-x,y',
+		'-z,-x,-y',
+		'z,y,x',
+		'z,y,-x',
+		'z,-y,x',
+		'z,-y,-x',
+		'-z,y,x',
+		'-z,y,-x',
+		'-z,-y,x',
+		'-z,-y,-x',
+		'x,x-y,z',
+		'x,x-y,-z',
+		'-x,-x+y,z',
+		'-x,-x+y,-z',
+		'y,-x+y,z',
+		'y,-x+y,-z',
+		'-y,x-y,z',
+		'-y,x-y,-z',
+		'x-y,x,z',
+		'x-y,x,-z',
+		'x-y,-y,z',
+		'x-y,-y,-z',
+		'-x+y,y,z',
+		'-x+y,y,-z',
+		'-x+y,-x,z',
+		'-x+y,-x,-z']
 
 	def PyInit(self):
 		# ------------------------- Input properties -------------------------
@@ -193,11 +87,11 @@ class SpaceGroupSymOps(PythonAlgorithm):
 		self.declareProperty('Space Group', 198, IntBoundedValidator(lower=1, upper=230),
 			doc='Space group number as given in International Tables for Crystallography, Vol. A')
 		self.declareProperty('Number of symmetry operations', '1', validator=StringListValidator(['1', '2', '3', '4', '5']))
-		self.declareProperty('Symmetry operation 1', 'x,y,z', validator=StringListValidator(symList))
-		self.declareProperty('Symmetry operation 2', 'x,y,z', validator=StringListValidator(symList))
-		self.declareProperty('Symmetry operation 3', 'x,y,z', validator=StringListValidator(symList))
-		self.declareProperty('Symmetry operation 4', 'x,y,z', validator=StringListValidator(symList))
-		self.declareProperty('Symmetry operation 5', 'x,y,z', validator=StringListValidator(symList))
+		self.declareProperty('Symmetry operation 1', 'x,y,z', validator=StringListValidator(self.symList))
+		self.declareProperty('Symmetry operation 2', 'x,y,z', validator=StringListValidator(self.symList))
+		self.declareProperty('Symmetry operation 3', 'x,y,z', validator=StringListValidator(self.symList))
+		self.declareProperty('Symmetry operation 4', 'x,y,z', validator=StringListValidator(self.symList))
+		self.declareProperty('Symmetry operation 5', 'x,y,z', validator=StringListValidator(self.symList))
 
 		self.setPropertySettings('Space Group', VisibleWhenProperty('Symmetrization by', PropertyCriterion.IsEqualTo, 'Space Group'))
 		self.setPropertySettings('Number of symmetry operations', VisibleWhenProperty('Symmetrization by', PropertyCriterion.IsEqualTo, 'Symmetry Operations'))
@@ -221,21 +115,19 @@ class SpaceGroupSymOps(PythonAlgorithm):
 		self.declareProperty('Axis Aligned', False, 'Perform binning aligned with the axes of the input MDEventWorkspace?')
 		self.declareProperty('AlignedDim0', 'h,-3,3,1', StringMandatoryValidator(), 'Format: \'name,limits,bins\'')
 		self.declareProperty('AlignedDim1', 'k,-3,3,1', StringMandatoryValidator(), 'Format: \'name,limits,bins\'')
-		self.declareProperty('BasisVector0', 'a,unit,1,1,0,0', StringMandatoryValidator(), 'Format: \'name,units,x,y,z\'')
-		self.declareProperty('BasisVector1', 'b,unit,0,0,1,0', StringMandatoryValidator(), 'Format: \'name,units,x,y,z\'')
-		self.declareProperty('Normalized Basis Vectors', True, 'Normalize the given basis vectors to unity')
-		self.declareProperty(FloatArrayProperty(name='Output Extents',
-												values=[-5,8,-5,8],
-												validator=FloatArrayLengthValidator(4)),
-			'The minimum, maximum edges of space of each dimension of the OUTPUT workspace, as a comma-separated list')
-		self.declareProperty(FloatArrayProperty(name='Output Bins',
-												values=[50,50],
-												validator=FloatArrayLengthValidator(2)),
+		self.declareProperty(FloatArrayProperty(name='Output Bins', values=[]),
 			'The number of bins for each dimension of the OUTPUT workspace')
+		self.declareProperty(FloatArrayProperty(name='Output Extents', values=[]),
+			'The minimum, maximum edges of space of each dimension of the OUTPUT workspace, as a comma-separated list')
 		self.declareProperty(FloatArrayProperty(name='Translation',
 												values=[0,0,0,0],
 												validator=FloatArrayLengthValidator(4)),
 			'Coordinates in the INPUT workspace that corresponds to (0,0,0) in the OUTPUT workspace')
+		self.declareProperty('Normalise Basis Vectors', True, 'Normalize the given basis vectors to unity')
+		self.declareProperty('BasisVector0', '', 'Format: \'name,units,x,y,z,dE\'. Leave blank for None.')
+		self.declareProperty('BasisVector1', '', 'Format: \'name,units,x,y,z,dE\'. Leave blank for None.')
+		self.declareProperty('BasisVector2', '', 'Format: \'name,units,x,y,z,dE\'. Leave blank for None.')
+		self.declareProperty('BasisVector3', '', 'Format: \'name,units,x,y,z,dE\'. Leave blank for None.')
 		self.declareProperty(WorkspaceProperty(name='Input Workspace',
 												defaultValue='',
 												direction=Direction.Input), 'An input MDWorkspace')
@@ -243,23 +135,29 @@ class SpaceGroupSymOps(PythonAlgorithm):
 
 		self.setPropertySettings('AlignedDim0',VisibleWhenProperty('Axis Aligned', PropertyCriterion.IsNotDefault))
 		self.setPropertySettings('AlignedDim1', VisibleWhenProperty('Axis Aligned', PropertyCriterion.IsNotDefault))
+		self.setPropertySettings('Output Bins', EnabledWhenProperty('Axis Aligned', PropertyCriterion.IsDefault))
+		self.setPropertySettings('Output Extents', EnabledWhenProperty('Axis Aligned', PropertyCriterion.IsDefault))
+		self.setPropertySettings('Translation', EnabledWhenProperty('Axis Aligned', PropertyCriterion.IsDefault))
+		self.setPropertySettings('Normalise Basis Vectors', EnabledWhenProperty('Axis Aligned',PropertyCriterion.IsDefault))
 		self.setPropertySettings('BasisVector0', VisibleWhenProperty('Axis Aligned', PropertyCriterion.IsDefault))
 		self.setPropertySettings('BasisVector1', VisibleWhenProperty('Axis Aligned', PropertyCriterion.IsDefault))
-		self.setPropertySettings('Normalized Basis Vectors', VisibleWhenProperty('Axis Aligned',PropertyCriterion.IsDefault))
-		self.setPropertySettings('Output Extents', VisibleWhenProperty('Axis Aligned', PropertyCriterion.IsDefault))
-		self.setPropertySettings('Output Bins', VisibleWhenProperty('Axis Aligned', PropertyCriterion.IsDefault))
-		self.setPropertySettings('Translation', VisibleWhenProperty('Axis Aligned', PropertyCriterion.IsDefault))
+		self.setPropertySettings('BasisVector2', VisibleWhenProperty('Axis Aligned', PropertyCriterion.IsDefault))
+		self.setPropertySettings('BasisVector3', VisibleWhenProperty('Axis Aligned', PropertyCriterion.IsDefault))
 
-		bin_grp = 'Binning parameters'
-		self.setPropertyGroup('Axis Aligned', bin_grp)
-		self.setPropertyGroup('AlignedDim0', bin_grp)
-		self.setPropertyGroup('AlignedDim1', bin_grp)
-		self.setPropertyGroup('BasisVector0', bin_grp)
-		self.setPropertyGroup('BasisVector1', bin_grp)
-		self.setPropertyGroup('Normalized Basis Vectors', bin_grp)
-		self.setPropertyGroup('Output Extents', bin_grp)
-		self.setPropertyGroup('Output Bins', bin_grp)
-		self.setPropertyGroup('Translation', bin_grp)
+		align_grp = 'Axis-Aligned Binning'
+		self.setPropertyGroup('Axis Aligned', align_grp)
+		self.setPropertyGroup('AlignedDim0', align_grp)
+		self.setPropertyGroup('AlignedDim1', align_grp)
+
+		nonalign_grp = 'Non Axis-Aligned Binning'
+		self.setPropertyGroup('Output Bins', nonalign_grp)
+		self.setPropertyGroup('Output Extents', nonalign_grp)
+		self.setPropertyGroup('Translation', nonalign_grp)
+		self.setPropertyGroup('Normalise Basis Vectors', nonalign_grp)
+		self.setPropertyGroup('BasisVector0', nonalign_grp)
+		self.setPropertyGroup('BasisVector1', nonalign_grp)
+		self.setPropertyGroup('BasisVector2', nonalign_grp)
+		self.setPropertyGroup('BasisVector3', nonalign_grp)
 
 		# ------------------------- Output properties ------------------------
 		self.declareProperty(WorkspaceProperty(name='Binned Workspace',
@@ -273,8 +171,10 @@ class SpaceGroupSymOps(PythonAlgorithm):
 		Adim1 = self.getProperty('AlignedDim1').value
 		basis0 = self.getProperty('BasisVector0').value
 		basis1 = self.getProperty('BasisVector1').value
+		basis2 = self.getProperty('BasisVector2').value
+		basis3 = self.getProperty('BasisVector3').value
 		axisAligned = self.getProperty('Axis Aligned').value
-		normalizeBasisVectors = self.getProperty('Normalized Basis Vectors').value
+		normalizeBasisVectors = self.getProperty('Normalise Basis Vectors').value
 		outputExtents = self.getProperty('Output Extents').value
 		outputBins = self.getProperty('Output Bins').value
 		translation = self.getProperty('Translation').value
@@ -286,147 +186,216 @@ class SpaceGroupSymOps(PythonAlgorithm):
 		symOp4 = self.getProperty('Symmetry operation 4').value
 		symOp5 = self.getProperty('Symmetry operation 5').value
 
+		# Create a logger to store all errors and other information related to this particular algorithm
+		log = Logger("SpaceGroupSymOps_log")
+
+		# Change value of empty basis vectors to None
+		if len(basis0) is 0:
+			log.fatal("Error: At least one basis vector needs to be defined. Cannot bin!")
+		if len(basis1) is 0:
+			basis1 = None
+		if len(basis2) is 0:
+			basis2 = None
+		if len(basis3) is 0:
+			basis3 = None
+
 		if axisAligned == True:
 			translation = [0,0,0,0]
 			basis0, extent0, bins0 = self.ConvertToNonAA(Adim0)
 			basis1, extent1, bins1 = self.ConvertToNonAA(Adim1)
+			basis2 = None
+			basis3 = None
 
 			outputExtents = [float(extent0[0]),float(extent0[1]),float(extent1[0]),float(extent1[1])]
 			outputBins = [int(bins0),int(bins1)]
 
-		binned_ws = BinMD(InputWorkspace=mdws, AxisAligned=False,
-					BasisVector0=basis0, BasisVector1=basis1,
-					NormalizeBasisVectors=normalizeBasisVectors, Translation=translation,
-					OutputExtents=outputExtents, OutputBins=outputBins)
-
+		self._binned_ws = BinMD(InputWorkspace=mdws, AxisAligned=False,
+			BasisVector0=basis0, BasisVector1=basis1,
+			BasisVector2=basis2, BasisVector3=basis3,
+			NormalizeBasisVectors=normalizeBasisVectors, Translation=translation,
+			OutputExtents=outputExtents, OutputBins=outputBins)
+		
 		if symChoice == "Symmetry Operations":
-			binned_ws = self._symmetrize_by_generators(mdws, False, basis0, basis1,
-				normalizeBasisVectors, translation, outputExtents, outputBins, binned_ws,
+			self._symmetrize_by_generators(mdws, False, basis0, basis1, basis2, basis3,
+				normalizeBasisVectors, translation, outputExtents, outputBins,
 				int(numOp), symOp1, symOp2, symOp3, symOp4, symOp5)
 		else:
-			binned_ws = self._symmetrize_by_sg(mdws, False, basis0, basis1,
-				normalizeBasisVectors, translation, outputExtents, outputBins, binned_ws,
+			self._symmetrize_by_sg(mdws, False, basis0, basis1, basis2, basis3,
+				normalizeBasisVectors, translation, outputExtents, outputBins,
 				sgNumber)
-
-		self.setProperty("Binned Workspace", binned_ws)
+		
+		self.setProperty("Binned Workspace", self._binned_ws)
 
 
 	def category(self):
 		return 'PythonAlgorithms'
 
 
-	def _symmetrize_by_sg(self, mdws, axisAligned, basis0, basis1,
-		normalizeBasisVectors, translation, outputExtents, outputBins, binned_ws,
+	def _symmetrize_by_sg(self, mdws, axisAligned, basis0, basis1, basis2, basis3,
+		normalizeBasisVectors, translation, outputExtents, outputBins,
 		sgNumber):
+
+		hmsymbol = str(SpaceGroupFactory.subscribedSpaceGroupSymbols(sgNumber))[2:-2] #Eliminate quotes and brackets
+		sg = SpaceGroupFactory.createSpaceGroup(hmsymbol) 
+		pg = PointGroupFactory.createPointGroupFromSpaceGroup(sg)
+		symOps = pg.getSymmetryOperations()
 
 		unit0, basisVec0 = self._destringify(basis0)
 		unit1, basisVec1 = self._destringify(basis1)
+		unit2, basisVec2 = self._destringify(basis2)
+		unit3, basisVec3 = self._destringify(basis3)
 
-		for index, item in enumerate(dict_sg[sgNumber]):
-			newBasisVec0 = dot(item, basisVec0)
-			newBasisVec1 = dot(item, basisVec1)
+		numbv = 0
+		if basisVec0 is not None:
+			BV0prime = self.EquivalentCoordinates(basisVec0,pg,sg)
+			numbv +=1
+		if basisVec1 is not None:
+			BV1prime = self.EquivalentCoordinates(basisVec1,pg,sg)
+			numbv +=1
+		if basisVec2 is not None:
+			BV2prime = self.EquivalentCoordinates(basisVec2,pg,sg)
+			numbv +=1
+		if basisVec3 is not None:
+			BV3prime = self.EquivalentCoordinates(basisVec3,pg,sg)
+			numbv +=1
 
-			basisVec0_str = unit0[0] + ',' + unit0[1] + ',' + str(newBasisVec0[0]) \
-							+ ',' + str(newBasisVec0[1]) + ',' + str(newBasisVec0[2]) + ',' + '0'
-			basisVec1_str = unit1[0] + ',' + unit1[1] + ',' + str(newBasisVec1[0]) \
-							+ ',' + str(newBasisVec1[1]) + ',' + str(newBasisVec1[2]) + ',' + '0'
-			newTranslation = translation + dict_t[sgNumber][index]
+		# Make the arrays of basis vectors into a single 3D array
+		if numbv == 4:
+			BVprime = array([BV0prime,BV1prime,BV2prime,BV3prime]).transpose(1,0,2)
+		elif numbv == 3:
+			BVprime = array([BV0prime,BV1prime,BV2prime]).transpose(1,0,2)
+		elif numbv == 2:
+			BVprime = array([BV0prime,BV1prime]).transpose(1,0,2)
+		elif numbv == 1:
+			BVprime = array([BV0prime]).transpose(1,0,2)
 
-			binned_ws += BinMD(InputWorkspace=mdws, AxisAligned=axisAligned,
-						BasisVector0=basisVec0_str, BasisVector1=basisVec1_str,
-						NormalizeBasisVectors=normalizeBasisVectors, Translation=newTranslation,
-						OutputExtents=outputExtents, OutputBins=outputBins)
-		return binned_ws
+		# Find the unique sets of basis vectors
+		UniqueBasisVecs = self.uniqueBVs(BVprime)
 
+		for BVset in UniqueBasisVecs:
+			basisVec0_str = None
+			basisVec1_str = None
+			basisVec2_str = None
+			basisVec3_str = None
 
-	def _symmetrize_by_generators(self, mdws, axisAligned, basis0, basis1,
-		normalizeBasisVectors, translation, outputExtents, outputBins, binned_ws,
+			if basisVec0 is not None:
+				basisVec0_str = unit0[0] + ',' + unit0[1] + ',' + str(BVset[0,0]) \
+					+ ',' + str(BVset[0,1]) + ',' + str(BVset[0,2]) + ',' + '0'
+			if basisVec1 is not None:
+				basisVec1_str = unit1[0] + ',' + unit1[1] + ',' + str(BVset[1,0]) \
+					+ ',' + str(BVset[1,1]) + ',' + str(BVset[1,2]) + ',' + '0'
+			if basisVec2 is not None:
+				basisVec2_str = unit2[0] + ',' + unit2[1] + ',' + str(BVset[2,0]) \
+					+ ',' + str(BVset[2,1]) + ',' + str(BVset[2,2]) + ',' + '0'
+			if basisVec3 is not None:
+				basisVec3_str = unit3[0] + ',' + unit3[1] + ',' + str(BVset[3,0]) \
+					+ ',' + str(BVset[3,1]) + ',' + str(BVset[3,2]) + ',' + '0'
+
+			print basisVec0_str
+			print basisVec1_str
+
+			self._binned_ws += BinMD(InputWorkspace=mdws, AxisAligned=axisAligned,
+				BasisVector0=basisVec0_str, BasisVector1=basisVec1_str,
+				BasisVector2=basisVec2_str, BasisVector3=basisVec3_str,
+				NormalizeBasisVectors=normalizeBasisVectors, Translation=translation,
+				OutputExtents=outputExtents, OutputBins=outputBins)
+		
+		return
+
+	def EquivalentCoordinates(self,basis,pntgrp,spcgrp):
+		"""Generates a list of all equivalent coordinates for a given space group.
+		Note that the program assumes that the hkl axes are orthogonal, even if the
+		space group is actually triangular or hexagonal"""
+		symOps = pntgrp.getSymmetryOperations()
+
+		sgnum = spcgrp.getNumber()
+		if sgnum >= 143 and sgnum <= 194:
+			print "Triangular/Hexagonal hkl transform"
+			CoordTransform = array([[1, -1/(3**0.5), 0], [0, 2/(3**0.5), 0], [0, 0, 1]])
+			CoordTransformInverse = array([[1,0.5, 0], [0, (3**0.5)/2, 0], [0, 0, 1]])
+		else:
+			CoordTransform = array([[1,0, 0], [0, 1, 0], [0, 0, 1]])
+			CoordTransformInverse = array([[1,0, 0], [0, 1, 0], [0, 0, 1]])
+
+		# Transform coordinates to non-orthogonal hkl space
+		basisprime = dot(CoordTransform, array(basis))
+		basisprime = basisprime.tolist()
+
+		EquivCoords = zeros((len(symOps),3)) 
+		i = 0
+		for item in symOps:
+			#Generate symmetry-equivalent coordinates
+			coordinatesPrime = item.transformHKL(basisprime)
+			EquivCoords[i,0] = coordinatesPrime.X()
+			EquivCoords[i,1] = coordinatesPrime.Y()
+			EquivCoords[i,2] = coordinatesPrime.Z()
+			# Transform back into orthogonal hkl space
+			EquivCoords[i] = dot(CoordTransformInverse, EquivCoords[i])
+			i+=1
+		return EquivCoords
+
+	def uniqueBVs(self, BVs):
+		"""Returns the uniqe sets of basis vectors as a single array"""
+		UniqueBV = []
+		for bv in BVs:
+			if not any(array_equal(bv, unique_bv) for unique_bv in UniqueBV):
+				UniqueBV.append(bv)
+		return UniqueBV
+
+	def _symmetrize_by_generators(self, mdws, axisAligned, basis0, basis1, basis2, basis3,
+		normalizeBasisVectors, translation, outputExtents, outputBins,
 		numOp, symOp1, symOp2, symOp3, symOp4, symOp5):
 		
 		unit0, basisVec0 = self._destringify(basis0)
 		unit1, basisVec1 = self._destringify(basis1)
+		unit2, basisVec2 = self._destringify(basis2)
+		unit3, basisVec3 = self._destringify(basis3)
 
 		symOpList = [symOp1, symOp2, symOp3, symOp4, symOp5]
 		for i in range(numOp):
+			basisVec0_str = None
+			basisVec1_str = None
+			basisVec2_str = None
+			basisVec3_str = None
+
 			symOp = SymmetryOperationFactory.createSymOp(symOpList[i])
-			
-			# x-value
-			coordinates, newTranslation = self._get_coordinates_with_translation([0, 1, 0], symOp)
-			newTranslation += translation # Factor in for the original translation reading
-			x0_value = dot(coordinates, basisVec0)
-			x1_value = dot(coordinates, basisVec1)
 
-			# y-value
-			coordinates = self._get_coordinates([0, 1, 0], symOp)
-			y0_value = dot(coordinates, basisVec0)
-			y1_value = dot(coordinates, basisVec1)
+			if basisVec0 is not None:
+				coordinatesPrime = symOp.transformCoordinates(basisVec0)
+				basisVec0_str = unit0[0] + ',' + unit0[1] + ',' + str(coordinatesPrime.getX()) \
+							+ ',' + str(coordinatesPrime.getY()) + ',' + str(coordinatesPrime.getZ()) + ',' + '0'
+			if basisVec1 is not None:
+				coordinatesPrime = symOp.transformCoordinates(basisVec1)
+				basisVec1_str = unit1[0] + ',' + unit1[1] + ',' + str(coordinatesPrime.getX()) \
+							+ ',' + str(coordinatesPrime.getY()) + ',' + str(coordinatesPrime.getZ()) + ',' + '0'
+			if basisVec2 is not None:
+				coordinatesPrime = symOp.transformCoordinates(basisVec2)
+				basisVec2_str = unit2[0] + ',' + unit2[1] + ',' + str(coordinatesPrime.getX()) \
+							+ ',' + str(coordinatesPrime.getY()) + ',' + str(coordinatesPrime.getZ()) + ',' + '0'
+			if basisVec3 is not None:
+				coordinatesPrime = symOp.transformCoordinates(basisVec3)
+				basisVec3_str = unit3[0] + ',' + unit3[1] + ',' + str(coordinatesPrime.getX()) \
+							+ ',' + str(coordinatesPrime.getY()) + ',' + str(coordinatesPrime.getZ()) + ',' + '0'
 
-			# z-value
-			coordinates = self._get_coordinates([0, 0, 1], symOp)
-			z0_value = dot(coordinates, basisVec0)
-			z1_value = dot(coordinates, basisVec1)
+			self._binned_ws += BinMD(InputWorkspace=mdws, AxisAligned=axisAligned,
+				BasisVector0=basisVec0_str, BasisVector1=basisVec1_str,
+				BasisVector2=basisVec2_str, BasisVector3=basisVec3_str,
+				NormalizeBasisVectors=normalizeBasisVectors, Translation=translation,
+				OutputExtents=outputExtents, OutputBins=outputBins)
 
-			# Combine values x,y,z values obtained above for new basis vectors
-			basisVec0_str = unit0[0] + ',' + unit0[1] + ',' + str(x0_value) \
-							+ ',' + str(y0_value) + ',' + str(z0_value) + ',' + '0'
-			basisVec1_str = unit1[0] + ',' + unit1[1] + ',' + str(x1_value) \
-							+ ',' + str(y1_value) + ',' + str(z1_value) + ',' + '0'
-
-			binned_ws += BinMD(InputWorkspace=mdws, AxisAligned=axisAligned,
-						BasisVector0=basisVec0_str, BasisVector1=basisVec1_str,
-						NormalizeBasisVectors=normalizeBasisVectors, Translation=newTranslation,
-						OutputExtents=outputExtents, OutputBins=outputBins)
-		return binned_ws
+		return
 
 
 	def _destringify(self, basis):
+		# Account for empty basis vectors
+		if basis is None:
+			return None, None
+
 		temp = basis.split(',')
 		unit = temp[0:2]
 		temp = temp[2:-1]
 		return unit, array([int(temp[0]), int(temp[1]), int(temp[2])])
 
-
-	def _get_coordinates(self, coordinates, symOp):
-		''' Split coordinates into int (basis) and decimal (translation) parts,
-		but return only int part 
-		'''
-		coordinatesPrime = symOp.transformCoordinates(coordinates)
-		newCoordinatesPrime = []
-			
-		splitNum = modf(coordinatesPrime.getX()) # 1st number
-		newCoordinatesPrime.append(splitNum[1])
-			
-		splitNum = modf(coordinatesPrime.getY()) # 2nd number
-		newCoordinatesPrime.append(splitNum[1])
-			
-		splitNum = modf(coordinatesPrime.getZ()) # 3rd number
-		newCoordinatesPrime.append(splitNum[1])
-
-		return newCoordinatesPrime
-
-	def _get_coordinates_with_translation(self, coordinates, symOp):
-		''' Split coordinates into int (basis) and decimal (translation) parts,
-		and return both int and translation parts 
-		'''
-		coordinatesPrime = symOp.transformCoordinates(coordinates)
-		newCoordinatesPrime = []
-		newTranslation = []
-		
-		splitNum = modf(coordinatesPrime.getX()) # 1st number
-		newCoordinatesPrime.append(splitNum[1])
-		newTranslation.append(splitNum[0])
-		
-		splitNum = modf(coordinatesPrime.getY()) # 2nd number
-		newCoordinatesPrime.append(splitNum[1])
-		newTranslation.append(splitNum[0])
-		
-		splitNum = modf(coordinatesPrime.getZ()) # 3rd number
-		newCoordinatesPrime.append(splitNum[1])
-		newTranslation.append(splitNum[0])
-
-		newTranslation.append(0) # Add energy dimension to the translation vector
-		
-		return newCoordinatesPrime, newTranslation
 
 	def ConvertToNonAA(self,AlignedInput):
 		temp = AlignedInput.split(',')
