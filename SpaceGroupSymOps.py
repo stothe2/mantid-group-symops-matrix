@@ -241,10 +241,10 @@ class SpaceGroupSymOps(PythonAlgorithm):
 		pg = PointGroupFactory.createPointGroupFromSpaceGroup(sg)
 		symOps = pg.getSymmetryOperations()
 
-		unit0, basisVec0 = self._destringify(basis0)
-		unit1, basisVec1 = self._destringify(basis1)
-		unit2, basisVec2 = self._destringify(basis2)
-		unit3, basisVec3 = self._destringify(basis3)
+		unit0, basisVec0, e0 = self._destringify(basis0)
+		unit1, basisVec1, e1 = self._destringify(basis1)
+		unit2, basisVec2, e2 = self._destringify(basis2)
+		unit3, basisVec3, e3 = self._destringify(basis3)
 
 		numbv = 0
 		if basisVec0 is not None:
@@ -281,16 +281,16 @@ class SpaceGroupSymOps(PythonAlgorithm):
 
 			if basisVec0 is not None:
 				basisVec0_str = unit0[0] + ',' + unit0[1] + ',' + str(BVset[0,0]) \
-					+ ',' + str(BVset[0,1]) + ',' + str(BVset[0,2]) + ',' + '0'
+					+ ',' + str(BVset[0,1]) + ',' + str(BVset[0,2]) + ',' + e0
 			if basisVec1 is not None:
 				basisVec1_str = unit1[0] + ',' + unit1[1] + ',' + str(BVset[1,0]) \
-					+ ',' + str(BVset[1,1]) + ',' + str(BVset[1,2]) + ',' + '0'
+					+ ',' + str(BVset[1,1]) + ',' + str(BVset[1,2]) + ',' + e1
 			if basisVec2 is not None:
 				basisVec2_str = unit2[0] + ',' + unit2[1] + ',' + str(BVset[2,0]) \
-					+ ',' + str(BVset[2,1]) + ',' + str(BVset[2,2]) + ',' + '0'
+					+ ',' + str(BVset[2,1]) + ',' + str(BVset[2,2]) + ',' + e2
 			if basisVec3 is not None:
 				basisVec3_str = unit3[0] + ',' + unit3[1] + ',' + str(BVset[3,0]) \
-					+ ',' + str(BVset[3,1]) + ',' + str(BVset[3,2]) + ',' + '0'
+					+ ',' + str(BVset[3,1]) + ',' + str(BVset[3,2]) + ',' + e3
 
 			print basisVec0_str
 			print basisVec1_str
@@ -347,10 +347,10 @@ class SpaceGroupSymOps(PythonAlgorithm):
 		normalizeBasisVectors, translation, outputExtents, outputBins,
 		numOp, symOp1, symOp2, symOp3, symOp4, symOp5):
 		
-		unit0, basisVec0 = self._destringify(basis0)
-		unit1, basisVec1 = self._destringify(basis1)
-		unit2, basisVec2 = self._destringify(basis2)
-		unit3, basisVec3 = self._destringify(basis3)
+		unit0, basisVec0, e0 = self._destringify(basis0)
+		unit1, basisVec1, e1 = self._destringify(basis1)
+		unit2, basisVec2, e2 = self._destringify(basis2)
+		unit3, basisVec3, e3 = self._destringify(basis3)
 
 		symOpList = [symOp1, symOp2, symOp3, symOp4, symOp5]
 		for i in range(numOp):
@@ -364,19 +364,19 @@ class SpaceGroupSymOps(PythonAlgorithm):
 			if basisVec0 is not None:
 				coordinatesPrime = symOp.transformCoordinates(basisVec0)
 				basisVec0_str = unit0[0] + ',' + unit0[1] + ',' + str(coordinatesPrime.getX()) \
-							+ ',' + str(coordinatesPrime.getY()) + ',' + str(coordinatesPrime.getZ()) + ',' + '0'
+							+ ',' + str(coordinatesPrime.getY()) + ',' + str(coordinatesPrime.getZ()) + ',' + e0
 			if basisVec1 is not None:
 				coordinatesPrime = symOp.transformCoordinates(basisVec1)
 				basisVec1_str = unit1[0] + ',' + unit1[1] + ',' + str(coordinatesPrime.getX()) \
-							+ ',' + str(coordinatesPrime.getY()) + ',' + str(coordinatesPrime.getZ()) + ',' + '0'
+							+ ',' + str(coordinatesPrime.getY()) + ',' + str(coordinatesPrime.getZ()) + ',' + e1
 			if basisVec2 is not None:
 				coordinatesPrime = symOp.transformCoordinates(basisVec2)
 				basisVec2_str = unit2[0] + ',' + unit2[1] + ',' + str(coordinatesPrime.getX()) \
-							+ ',' + str(coordinatesPrime.getY()) + ',' + str(coordinatesPrime.getZ()) + ',' + '0'
+							+ ',' + str(coordinatesPrime.getY()) + ',' + str(coordinatesPrime.getZ()) + ',' + e2
 			if basisVec3 is not None:
 				coordinatesPrime = symOp.transformCoordinates(basisVec3)
 				basisVec3_str = unit3[0] + ',' + unit3[1] + ',' + str(coordinatesPrime.getX()) \
-							+ ',' + str(coordinatesPrime.getY()) + ',' + str(coordinatesPrime.getZ()) + ',' + '0'
+							+ ',' + str(coordinatesPrime.getY()) + ',' + str(coordinatesPrime.getZ()) + ',' + e3
 
 			self._binned_ws += BinMD(InputWorkspace=mdws, AxisAligned=axisAligned,
 				BasisVector0=basisVec0_str, BasisVector1=basisVec1_str,
@@ -390,12 +390,12 @@ class SpaceGroupSymOps(PythonAlgorithm):
 	def _destringify(self, basis):
 		# Account for empty basis vectors
 		if basis is None:
-			return None, None
+			return None, None, None
 
 		temp = basis.split(',')
 		unit = temp[0:2]
-		temp = temp[2:-1]
-		return unit, array([int(temp[0]), int(temp[1]), int(temp[2])])
+		temp = temp[2:]
+		return unit, array([int(temp[0]), int(temp[1]), int(temp[2])]), temp[3]
 
 
 	def ConvertToNonAA(self,AlignedInput):
