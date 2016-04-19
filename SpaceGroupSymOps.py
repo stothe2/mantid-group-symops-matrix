@@ -1,6 +1,6 @@
 from mantid.kernel import *
 from mantid.api import *
-from mantid.geometry import SymmetryOperationFactory
+from mantid.geometry import *
 
 from collections import defaultdict
 from numpy import array
@@ -115,20 +115,22 @@ class SpaceGroupSymOps(PythonAlgorithm):
 		self.declareProperty('AxisAligned', False, 'Perform binning aligned with the axes of the input MDEventWorkspace?')
 		self.declareProperty('AlignedDim0', 'h,-3,3,1', StringMandatoryValidator(), 'Format: \'name,limits,bins\'')
 		self.declareProperty('AlignedDim1', 'k,-3,3,1', StringMandatoryValidator(), 'Format: \'name,limits,bins\'')
+		self.declareProperty('AlignedDim2', 'h,-3,3,1', StringMandatoryValidator(), 'Format: \'name,limits,bins\'')
+		self.declareProperty('AlignedDim3', 'h,-3,3,1', StringMandatoryValidator(), 'Format: \'name,limits,bins\'')
 
-		self.declareProperty(FloatArrayProperty(name='OutputBins', values=[]),
+		self.declareProperty(FloatArrayProperty(name='OutputBins', values=[50,50,1,1]),
 			'The number of bins for each dimension of the OUTPUT workspace')
-		self.declareProperty(FloatArrayProperty(name='OutputExtents', values=[]),
+		self.declareProperty(FloatArrayProperty(name='OutputExtents', values=[-5,5,-5,5,-0.5,0.5,6,10]),
 			'The minimum, maximum edges of space of each dimension of the OUTPUT workspace, as a comma-separated list')
 		self.declareProperty(FloatArrayProperty(name='Translation',
 												values=[0,0,0,0],
 												validator=FloatArrayLengthValidator(4)),
 			'Coordinates in the INPUT workspace that corresponds to (0,0,0) in the OUTPUT workspace')
 		self.declareProperty('Normalise Basis Vectors', True, 'Normalize the given basis vectors to unity')
-		self.declareProperty('BasisVector0', '', 'Format: \'name,units,x,y,z,dE\'. Leave blank for None.')
-		self.declareProperty('BasisVector1', '', 'Format: \'name,units,x,y,z,dE\'. Leave blank for None.')
-		self.declareProperty('BasisVector2', '', 'Format: \'name,units,x,y,z,dE\'. Leave blank for None.')
-		self.declareProperty('BasisVector3', '', 'Format: \'name,units,x,y,z,dE\'. Leave blank for None.')
+		self.declareProperty('BasisVector0', 'a,unit,1,1,0,0', 'Format: \'name,units,x,y,z,dE\'. Leave blank for None.')
+		self.declareProperty('BasisVector1', 'b,unit,0,0,1,0', 'Format: \'name,units,x,y,z,dE\'. Leave blank for None.')
+		self.declareProperty('BasisVector2', 'c,unit,1,-1,0,0', 'Format: \'name,units,x,y,z,dE\'. Leave blank for None.')
+		self.declareProperty('BasisVector3', 'E,unit,0,0,0,1', 'Format: \'name,units,x,y,z,dE\'. Leave blank for None.')
 		self.declareProperty(WorkspaceProperty(name='InputWorkspace',
 												defaultValue='',
 												direction=Direction.Input), 'An input MDWorkspace')
@@ -136,6 +138,8 @@ class SpaceGroupSymOps(PythonAlgorithm):
 
 		self.setPropertySettings('AlignedDim0',VisibleWhenProperty('AxisAligned', PropertyCriterion.IsNotDefault))
 		self.setPropertySettings('AlignedDim1', VisibleWhenProperty('AxisAligned', PropertyCriterion.IsNotDefault))
+		self.setPropertySettings('AlignedDim2',VisibleWhenProperty('AxisAligned', PropertyCriterion.IsNotDefault))
+		self.setPropertySettings('AlignedDim3', VisibleWhenProperty('AxisAligned', PropertyCriterion.IsNotDefault))
 		self.setPropertySettings('OutputBins', EnabledWhenProperty('AxisAligned', PropertyCriterion.IsDefault))
 		self.setPropertySettings('OutputExtents', EnabledWhenProperty('AxisAligned', PropertyCriterion.IsDefault))
 		self.setPropertySettings('Translation', EnabledWhenProperty('AxisAligned', PropertyCriterion.IsDefault))
@@ -149,6 +153,8 @@ class SpaceGroupSymOps(PythonAlgorithm):
 		self.setPropertyGroup('AxisAligned', align_grp)
 		self.setPropertyGroup('AlignedDim0', align_grp)
 		self.setPropertyGroup('AlignedDim1', align_grp)
+		self.setPropertyGroup('AlignedDim2', align_grp)
+		self.setPropertyGroup('AlignedDim3', align_grp)
 
 		nonalign_grp = 'Non Axis-Aligned Binning'
 		self.setPropertyGroup('OutputBins', nonalign_grp)
@@ -170,6 +176,8 @@ class SpaceGroupSymOps(PythonAlgorithm):
 		mdws = self.getProperty('InputWorkspace').value
 		Adim0 = self.getProperty('AlignedDim0').value
 		Adim1 = self.getProperty('AlignedDim1').value
+		Adim2 = self.getProperty('AlignedDim2').value
+		Adim3 = self.getProperty('AlignedDim3').value
 		basis0 = self.getProperty('BasisVector0').value
 		basis1 = self.getProperty('BasisVector1').value
 		basis2 = self.getProperty('BasisVector2').value
@@ -204,8 +212,8 @@ class SpaceGroupSymOps(PythonAlgorithm):
 			translation = [0,0,0,0]
 			basis0, extent0, bins0 = self.ConvertToNonAA(Adim0)
 			basis1, extent1, bins1 = self.ConvertToNonAA(Adim1)
-			basis2 = None
-			basis3 = None
+			basis2, extent2, bins2 = self.ConvertToNonAA(Adim2)
+			basis3, extent3, bins3 = self.ConvertToNonAA(Adim3)
 
 			outputExtents = [float(extent0[0]),float(extent0[1]),float(extent1[0]),float(extent1[1])]
 			outputBins = [int(bins0),int(bins1)]
@@ -399,6 +407,8 @@ class SpaceGroupSymOps(PythonAlgorithm):
 
 
 	def ConvertToNonAA(self,AlignedInput):
+		if AlignedInput is None:
+			return None, 0, 0, 0
 		temp = AlignedInput.split(',')
 		name = temp[0]
 		extent = temp[1:3]
