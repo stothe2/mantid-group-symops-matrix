@@ -113,10 +113,10 @@ class SpaceGroupSymOps(PythonAlgorithm):
 
 		# Binning properties
 		self.declareProperty('AxisAligned', False, 'Perform binning aligned with the axes of the input MDEventWorkspace?')
-		self.declareProperty('AlignedDim0', 'h,-3,3,1', StringMandatoryValidator(), 'Format: \'name,limits,bins\'')
-		self.declareProperty('AlignedDim1', 'k,-3,3,1', StringMandatoryValidator(), 'Format: \'name,limits,bins\'')
-		self.declareProperty('AlignedDim2', 'h,-3,3,1', StringMandatoryValidator(), 'Format: \'name,limits,bins\'')
-		self.declareProperty('AlignedDim3', 'h,-3,3,1', StringMandatoryValidator(), 'Format: \'name,limits,bins\'')
+		self.declareProperty('AlignedDim0', 'h,-3,3,10', StringMandatoryValidator(), 'Format: \'name,limits,bins\'')
+		self.declareProperty('AlignedDim1', 'k,-3,3,10', StringMandatoryValidator(), 'Format: \'name,limits,bins\'')
+		self.declareProperty('AlignedDim2', 'l,-3,3,1', StringMandatoryValidator(), 'Format: \'name,limits,bins\'')
+		self.declareProperty('AlignedDim3', 'E,-3,3,1', StringMandatoryValidator(), 'Format: \'name,limits,bins\'')
 
 		self.declareProperty(FloatArrayProperty(name='OutputBins', values=[50,50,1,1]),
 			'The number of bins for each dimension of the OUTPUT workspace')
@@ -215,8 +215,9 @@ class SpaceGroupSymOps(PythonAlgorithm):
 			basis2, extent2, bins2 = self.ConvertToNonAA(Adim2)
 			basis3, extent3, bins3 = self.ConvertToNonAA(Adim3)
 
-			outputExtents = [float(extent0[0]),float(extent0[1]),float(extent1[0]),float(extent1[1])]
-			outputBins = [int(bins0),int(bins1)]
+			outputExtents = [float(extent0[0]),float(extent0[1]),float(extent1[0]),float(extent1[1]),
+			float(extent2[0]),float(extent2[1]), float(extent3[0]),float(extent3[1])]
+			outputBins = [int(bins0),int(bins1),int(bins2),int(bins3)]
 
 		self._binned_ws = BinMD(InputWorkspace=mdws, AxisAligned=False,
 			BasisVector0=basis0, BasisVector1=basis1,
@@ -415,13 +416,13 @@ class SpaceGroupSymOps(PythonAlgorithm):
 		numbins = temp[3]
 
 		#Build basis vector
-		if name == 'h':
+		if name == 'h' or 'H':
 			BVect = 'h,rlu,1,0,0,0'
-		elif name == 'k':
+		elif name == 'k' or 'K':
 			BVect = 'k,rlu,0,1,0,0'
-		elif name == 'l':
+		elif name == 'l' or 'L':
 			BVect = 'l,rlu,0,0,1,0'
-		elif name == 'E':
+		elif name == 'E' or 'DeltaE' or 'deltaE' or 'delta E':
 			BVect = 'E,eV,0,0,0,1'
 
 		return BVect, extent, numbins
