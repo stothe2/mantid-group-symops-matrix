@@ -416,13 +416,13 @@ class SpaceGroupSymOps(PythonAlgorithm):
 		numbins = temp[3]
 
 		#Build basis vector
-		if name == 'h' or 'H':
+		if name == 'h' or name =='H':
 			BVect = 'h,rlu,1,0,0,0'
-		elif name == 'k' or 'K':
+		elif name == 'k' or name =='K':
 			BVect = 'k,rlu,0,1,0,0'
-		elif name == 'l' or 'L':
+		elif name == 'l' or name =='L':
 			BVect = 'l,rlu,0,0,1,0'
-		elif name == 'E' or 'DeltaE' or 'deltaE' or 'delta E':
+		elif name == 'E' or name =='DeltaE' or name =='deltaE' or name =='delta E':
 			BVect = 'E,eV,0,0,0,1'
 
 		return BVect, extent, numbins
