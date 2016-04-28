@@ -101,8 +101,8 @@ S.setProperty("OutputBins", [170,200,1,250]) # Same as Guy's settings
 S.setProperty("OutputExtents", [-6,6,-5,5,-0.05,0.05,-3,58]) # Same as Guy's settings
 S.setProperty("BasisVector0", "a,unit,1,1,0,0")
 S.setProperty("BasisVector1", "b,unit,0,0,1,0")
-S.setProperty("BasisVector3", "c,unit,1,-1,0,0")
-S.setProperty("BasisVector2", "E,unit,0,0,0,1")
+S.setProperty("BasisVector2", "c,unit,1,-1,0,0")
+S.setProperty("BasisVector3", "E,unit,0,0,0,1")
 S.setProperty("Binned Workspace", "outputWS")
 
 #Execute
