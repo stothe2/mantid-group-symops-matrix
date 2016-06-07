@@ -429,4 +429,4 @@ class SpaceGroupSymOps(PythonAlgorithm):
 
 
 # Register algorithm with Mantid
-AlgorithmFactory.subscribe(SpaceGroupSymOps)
+AlgorithmFactory.subscribe(SymmetrizeBySG)
